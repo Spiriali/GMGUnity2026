@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 [AddComponentMenu("Playground/Attributes/Health System")]
 public class HealthSystemAttribute : MonoBehaviour
 {
-	public int health = 3;
+	public int health = 10;
 
 	private UIScript ui;
 	private int maxHealth;
@@ -14,6 +14,12 @@ public class HealthSystemAttribute : MonoBehaviour
 	// it's -1 if the object is not a player
 	private int playerNumber;
 
+	private float loseEveryXSeconds  = 2f;
+	
+	
+	public bool stuffy = false;
+
+	
 
 	private void Start()
 	{
@@ -42,6 +48,10 @@ public class HealthSystemAttribute : MonoBehaviour
 		}
 
 		maxHealth = health; //note down the maximum health to avoid going over it when the player gets healed
+		
+			InvokeRepeating(nameof(ConstantLoss), loseEveryXSeconds, loseEveryXSeconds);
+		
+		
 	}
 
 
@@ -70,4 +80,15 @@ public class HealthSystemAttribute : MonoBehaviour
             Destroy(gameObject);
         }
     }
+	
+	private void ConstantLoss()
+	{
+		if (!stuffy)
+		{
+			ModifyHealth(-1);
+		}
+
+		
+	}
+
 }
