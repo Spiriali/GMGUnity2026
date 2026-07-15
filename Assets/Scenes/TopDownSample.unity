@@ -133,8 +133,6 @@ GameObject:
   - component: {fileID: 363637759}
   - component: {fileID: 363637758}
   - component: {fileID: 363637763}
-  - component: {fileID: 363637764}
-  - component: {fileID: 363637765}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -202,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Move
   rigidbody2D: {fileID: 0}
   typeOfControl: 0
-  speed: 1
+  speed: 0.25
   movementType: 0
   orientToDirection: 0
   lookAxis: 0
@@ -4730,3 +4728,4 @@ SceneRoots:
   - {fileID: 938658903}
   - {fileID: 945814944}
   - {fileID: 715556053}
+  - {fileID: 1257520063}
