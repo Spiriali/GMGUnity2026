@@ -63,12 +63,27 @@ public class Move : Physics2DObject
 		}
 			
 		movement = new Vector3(moveHorizontal, moveVertical);
-        if(animator != null) animator.SetFloat("runSpeed", Mathf.Abs(moveHorizontal) *2f);
+		if (animator != null)
+		{
+			animator.SetFloat("InputX", moveHorizontal);
+            animator.SetFloat("InputY", moveVertical);
+            if (Mathf.Abs(moveHorizontal) > 0f || Mathf.Abs(moveVertical) > 0f) 
+			{
+				animator.SetBool("isWalking", true);
+                animator.SetFloat("LastInputY", moveVertical);
+                animator.SetFloat("LastInputX", moveHorizontal);
+            }
+			if (moveHorizontal == 0f && moveVertical == 0f)
+			{
+				animator.SetBool("isWalking", false);
+            }
+        }
 
 
-		//rotate the GameObject towards the direction of movement
-		//the axis to look can be decided with the "axis" variable
-		if(orientToDirection)
+
+        //rotate the GameObject towards the direction of movement
+        //the axis to look can be decided with the "axis" variable
+        if (orientToDirection)
 		{
 			//this code wasn't working (flipped character on its head), so I'm putting in a simple version
 			if (movement.sqrMagnitude >= 0.01f)
