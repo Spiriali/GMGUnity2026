@@ -16,6 +16,18 @@ public class Inventory : MonoBehaviour
     private InventoryItem itemScript;
 
     public HealthSystemAttribute healthSystem;
+    public GameObject stuffyObject;
+    public TopDownShootProjectile shootScript;
+    public Move moveScript;
+    public float frozenTime = 1f;
+
+    private void Start()
+    {
+        shootScript = GetComponent<TopDownShootProjectile>();
+        moveScript = GetComponent<Move>();
+    }
+
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("inventory"))
@@ -24,6 +36,19 @@ public class Inventory : MonoBehaviour
             pickUp = true;
             item = collision.gameObject;
             itemScript = item.GetComponent<InventoryItem>();
+        }
+        if (collision.CompareTag("Closet"))
+        {
+            if (stuffy) 
+            {
+                //stuffy disappears from inventory
+                // plyer no longer has stuffy in inventory logic
+                StuffyLoss();
+                //sprite of stuffy appears in the enviornment outside of the closet
+                Instantiate(stuffyObject, collision.gameObject.GetComponent<Closet>().spawnLocation, Quaternion.identity);
+            }
+            
+
         }
     }
         
@@ -51,6 +76,9 @@ public class Inventory : MonoBehaviour
         if (stuffy && Input.GetKeyDown(KeyCode.Space))
         {
             healthSystem.ModifyHealth(1);
+            moveScript.enabled = false;
+            shootScript.enabled = false;
+            Invoke(nameof(EnableMoveShoot), frozenTime);
         }
     }
     
@@ -67,6 +95,7 @@ public class Inventory : MonoBehaviour
     {
        stuffy = false;
        stuffyImage.SetActive(false);
+       healthSystem.stuffy = false;
     }
     private void KeyPickUp()
     {
@@ -93,5 +122,11 @@ public class Inventory : MonoBehaviour
     {
         throwable = false;
         throwableImage.SetActive(false);
+    }
+
+    private void EnableMoveShoot()
+    {
+        moveScript.enabled = true;
+        shootScript.enabled = true;
     }
  }

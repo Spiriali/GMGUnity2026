@@ -5,11 +5,12 @@ using UnityEngine;
 public class TopDownShootProjectile : MonoBehaviour {
 
 	public GameObject projectilePrefab;
-	public InputManager.InputButton shootButton = InputManager.InputButton.Action1;
+	public KeyCode shootButton = KeyCode.Q;
 	public float projectilesPerSecond = 5f;
 	public float projectileSpeed = 1f;
 	//Note make public in next release
 	public bool fireInDirectionOfMouseCursor = false;
+	public Inventory inventory;
 
 	InputManager inputMgr;
 	GameManager gameMgr;
@@ -132,22 +133,23 @@ public class TopDownShootProjectile : MonoBehaviour {
 			fireRateCounter += Time.deltaTime;
 		}
 
-		if (inputMgr.GetKeyUp(shootButton) && animator != null)
+		if (Input.GetKeyUp(shootButton) && animator != null)
 		{
 			animator.SetBool("isShooting", false);
 			audioSrc.Stop();
 		}
 
-		if (inputMgr.GetKeyDown(shootButton) && animator != null) animator.SetBool("isShooting", true);
+		if (Input.GetKeyDown(shootButton) && animator != null) animator.SetBool("isShooting", true);
 
-		if (inputMgr.GetKey(shootButton))
+		if (Input.GetKey(shootButton))
 		{
 			if (animator != null) animator.SetBool("isShooting", true);
 
-			if (fireRateCounter == 0f)
+			if (fireRateCounter == 0f && inventory.throwable)
 			{
 				Shoot();
 				fireRateCounter += Time.deltaTime;
+				inventory.ThrowableLoss();
 			}
 		}
 
