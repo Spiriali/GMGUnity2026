@@ -44,7 +44,7 @@ public class HealthSystemAttribute : MonoBehaviour
 		if(ui != null
 			&& playerNumber != -1)
 		{
-			ui.SetHealth(health, playerNumber);
+			ui.SetHealth(health, maxHealth, playerNumber);
 		}
 
 		maxHealth = health; //note down the maximum health to avoid going over it when the player gets healed
@@ -71,7 +71,7 @@ public class HealthSystemAttribute : MonoBehaviour
         if (ui != null
             && playerNumber != -1)
         {
-            ui.ChangeHealth(amount, playerNumber);
+            ui.ChangeHealth(amount, maxHealth, playerNumber);
         }
 
         //DEAD

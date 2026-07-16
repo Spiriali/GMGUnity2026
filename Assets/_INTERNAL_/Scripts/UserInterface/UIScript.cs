@@ -24,6 +24,9 @@ public class UIScript : MonoBehaviour
 	public GameObject statsPanel, gameOverPanel, winPanel;
 	public Transform inventory;
 	public GameObject resourceItemPrefab;
+	public float width = 350f;
+	public float height = 50f;
+	[SerializeField] RectTransform healthbar;
 
 
 	// Internal variables to keep track of score, health, and resources, win state
@@ -132,17 +135,22 @@ public class UIScript : MonoBehaviour
 
 
 
-	public void SetHealth(int amount, int playerNumber)
+	public void SetHealth(int amount, int max, int playerNumber)
 	{
 		playersHealth[playerNumber] = amount;
 		numberLabels[playerNumber].text = playersHealth[playerNumber].ToString();
+		if (max != 0)
+		{
+			float newwidth = width * ((float)amount / (float)max);
+			healthbar.sizeDelta = new Vector2(newwidth, height);
+		}
 	}
 
 
 
-	public void ChangeHealth(int change, int playerNumber)
+	public void ChangeHealth(int change, int max,  int playerNumber)
 	{
-		SetHealth(playersHealth[playerNumber] + change, playerNumber);
+		SetHealth(playersHealth[playerNumber] + change, max, playerNumber);
 
 		if(gameType != GameType.Endless
 			&& playersHealth[playerNumber] <= 0)
