@@ -5,11 +5,15 @@ public class InventoryItem : MonoBehaviour
     public bool stuffy = false;
     public bool key = false;
     public bool throwable = false;
-
+    public bool disappear = true;
 
     public void Disappear()
     {
-        gameObject.SetActive(false);
+        if (disappear)
+        {
+            gameObject.SetActive(false);
+        }
+        
     }
 
 }
