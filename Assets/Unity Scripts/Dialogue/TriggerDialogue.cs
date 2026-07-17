@@ -33,7 +33,7 @@ public class TriggerDialogue : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.E) && inDialogue && dialogueNode!=null && !dialogueRunner.IsDialogueRunning)
+        if (Input.GetKey(KeyCode.F) && inDialogue && dialogueNode!=null && !dialogueRunner.IsDialogueRunning)
         {
             dialogueRunner.StartDialogue(dialogueNode);
         }
