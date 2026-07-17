@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     public bool stuffy = false;
     public bool throwable = false;
     public bool key = false;
+    private bool canHeal = true;
 
     public GameObject stuffyImage;
     public GameObject keyImage;
@@ -47,8 +48,14 @@ public class Inventory : MonoBehaviour
                 //sprite of stuffy appears in the enviornment outside of the closet
                 Instantiate(stuffyObject, collision.gameObject.GetComponent<Closet>().spawnLocation, Quaternion.identity);
             }
-            
-
+        }
+        if (collision.CompareTag("Locked"))
+        {
+            if (key)
+            {
+                collision.gameObject.SetActive(false);
+                KeyLoss();
+            }
         }
     }
         
@@ -73,9 +80,10 @@ public class Inventory : MonoBehaviour
              itemScript.Disappear();
            }
         }
-        if (stuffy && Input.GetKeyDown(KeyCode.Space))
+        if (stuffy && Input.GetKeyDown(KeyCode.Space) && canHeal)
         {
             healthSystem.ModifyHealth(1);
+            canHeal = false;
             moveScript.enabled = false;
             shootScript.enabled = false;
             Invoke(nameof(EnableMoveShoot), frozenTime);
@@ -128,5 +136,6 @@ public class Inventory : MonoBehaviour
     {
         moveScript.enabled = true;
         shootScript.enabled = true;
+        canHeal = true;
     }
  }

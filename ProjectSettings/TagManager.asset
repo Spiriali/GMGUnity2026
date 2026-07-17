@@ -9,6 +9,7 @@ TagManager:
   - inventory
   - Enemy
   - Closet
+  - Locked
   layers:
   - Default
   - TransparentFX
