@@ -9,10 +9,16 @@ public class Inventory : MonoBehaviour
     public bool throwable = false;
     public bool key = false;
     private bool canHeal = true;
+    private bool stuffySelected = false;
+    private bool keySelected = false;
+    private bool throwableSelected = false;
 
     public GameObject stuffyImage;
     public GameObject keyImage;
     public GameObject throwableImage;
+    public GameObject stuffySelect;
+    public GameObject keySelect;
+    public GameObject throwableSelect;
     private GameObject item;
     private InventoryItem itemScript;
 
@@ -80,13 +86,42 @@ public class Inventory : MonoBehaviour
              itemScript.Disappear();
            }
         }
-        if (stuffy && Input.GetKeyDown(KeyCode.Space) && canHeal)
+        if (stuffy && Input.GetKeyDown(KeyCode.E))
         {
-            healthSystem.ModifyHealth(1);
-            canHeal = false;
-            moveScript.enabled = false;
-            shootScript.enabled = false;
-            Invoke(nameof(EnableMoveShoot), frozenTime);
+            if (canHeal && stuffySelected)
+            {
+                healthSystem.ModifyHealth(1);
+                canHeal = false;
+                moveScript.enabled = false;
+                shootScript.enabled = false;
+                Invoke(nameof(EnableMoveShoot), frozenTime);
+            }
+            if (keySelected)
+            {
+
+            }
+            if (throwableSelected)
+            {
+
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) 
+        {
+            stuffySelected = !stuffySelected;
+            keySelected = false;
+            throwableSelected = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            keySelected = !keySelected;
+            stuffySelected = false;
+            throwableSelected = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            throwableSelected = !throwableSelected;
+            stuffySelected = false;
+            keySelected = false;
         }
     }
     
