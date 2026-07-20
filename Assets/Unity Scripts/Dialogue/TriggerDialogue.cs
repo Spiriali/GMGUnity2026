@@ -9,6 +9,18 @@ public class TriggerDialogue : MonoBehaviour
     private bool inDialogue;
     private string dialogueNode;
     public GameObject buttonPrompt;
+    private HealthSystemAttribute healthSystem;
+    private Move movement;
+    private Inventory inventory;
+
+    private void Start()
+    {
+        healthSystem = GetComponent<HealthSystemAttribute>();
+        movement = GetComponent<Move>();
+        inventory = GetComponent<Inventory>(); 
+        dialogueRunner = dialogueSystem.GetComponent<DialogueRunner>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Dialogue"))
@@ -30,15 +42,24 @@ public class TriggerDialogue : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        dialogueRunner = dialogueSystem.GetComponent<DialogueRunner>();
-    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.F) && inDialogue && dialogueNode!=null && !dialogueRunner.IsDialogueRunning)
         {
             dialogueRunner.StartDialogue(dialogueNode);
+            healthSystem.enabled = false;
+            movement.enabled = false;
+            inventory.enabled = false;
+            healthSystem.inDialogue = true;
         }
+    }
+
+    [YarnCommand("dialogueend")]
+    public void EndDialogue()
+    {
+        healthSystem.enabled = true;
+        movement.enabled = true;
+        inventory.enabled = true;
+        healthSystem.inDialogue = false;
     }
 }
