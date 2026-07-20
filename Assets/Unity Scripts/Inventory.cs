@@ -9,10 +9,17 @@ public class Inventory : MonoBehaviour
     public bool throwable = false;
     public bool key = false;
     private bool canHeal = true;
+    private bool stuffySelected = false;
+    private bool keySelected = false;
+    public bool throwableSelected = false;
 
     public GameObject stuffyImage;
     public GameObject keyImage;
     public GameObject throwableImage;
+    public GameObject stuffySelect;
+    public GameObject keySelect;
+    public GameObject throwableSelect;
+    public GameObject buttonPrompt;
     private GameObject item;
     private InventoryItem itemScript;
 
@@ -21,6 +28,8 @@ public class Inventory : MonoBehaviour
     public TopDownShootProjectile shootScript;
     public Move moveScript;
     public float frozenTime = 1f;
+
+    private GameObject door;
 
     private void Start()
     {
@@ -35,6 +44,7 @@ public class Inventory : MonoBehaviour
         {
            
             pickUp = true;
+            buttonPrompt.SetActive(true);
             item = collision.gameObject;
             itemScript = item.GetComponent<InventoryItem>();
         }
@@ -51,11 +61,7 @@ public class Inventory : MonoBehaviour
         }
         if (collision.CompareTag("Locked"))
         {
-            if (key)
-            {
-                collision.gameObject.SetActive(false);
-                KeyLoss();
-            }
+            door = collision.gameObject;
         }
     }
         
@@ -64,7 +70,7 @@ public class Inventory : MonoBehaviour
         if (collision.CompareTag("inventory"))
         {
             pickUp = false;
-            
+            buttonPrompt.SetActive(false);
         }
     }
     
@@ -80,13 +86,49 @@ public class Inventory : MonoBehaviour
              itemScript.Disappear();
            }
         }
-        if (stuffy && Input.GetKeyDown(KeyCode.Space) && canHeal)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            healthSystem.ModifyHealth(1);
-            canHeal = false;
-            moveScript.enabled = false;
-            shootScript.enabled = false;
-            Invoke(nameof(EnableMoveShoot), frozenTime);
+            if (stuffy && canHeal && stuffySelected)
+            {
+                healthSystem.ModifyHealth(1);
+                canHeal = false;
+                moveScript.enabled = false;
+                shootScript.enabled = false;
+                Invoke(nameof(EnableMoveShoot), frozenTime);
+            }
+            if (key && keySelected && door != null)
+            {
+                door.SetActive(false);
+                KeyLoss();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) 
+        {
+            stuffySelected = !stuffySelected;
+            keySelected = false;
+            throwableSelected = false;
+            stuffySelect.SetActive(stuffySelected);
+            keySelect.SetActive(keySelected);
+            throwableSelect.SetActive(throwableSelected); 
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            keySelected = !keySelected;
+            stuffySelected = false;
+            throwableSelected = false;
+            stuffySelect.SetActive(stuffySelected);
+            keySelect.SetActive(keySelected);
+            throwableSelect.SetActive(throwableSelected);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            throwableSelected = !throwableSelected;
+            stuffySelected = false;
+            keySelected = false;
+            stuffySelect.SetActive(stuffySelected);
+            keySelect.SetActive(keySelected);
+            throwableSelect.SetActive(throwableSelected);
         }
     }
     
