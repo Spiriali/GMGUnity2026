@@ -18,6 +18,7 @@ public class HealthSystemAttribute : MonoBehaviour
 	
 	
 	public bool stuffy = false;
+	public bool inDialogue = false;
 
 	
 
@@ -83,7 +84,7 @@ public class HealthSystemAttribute : MonoBehaviour
 	
 	private void ConstantLoss()
 	{
-		if (!stuffy)
+		if (!stuffy && !inDialogue)
 		{
 			ModifyHealth(-1);
 		}

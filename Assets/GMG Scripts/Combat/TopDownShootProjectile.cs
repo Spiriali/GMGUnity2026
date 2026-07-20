@@ -5,7 +5,7 @@ using UnityEngine;
 public class TopDownShootProjectile : MonoBehaviour {
 
 	public GameObject projectilePrefab;
-	public KeyCode shootButton = KeyCode.Q;
+	public KeyCode shootButton = KeyCode.E;
 	public float projectilesPerSecond = 5f;
 	public float projectileSpeed = 1f;
 	//Note make public in next release
@@ -86,9 +86,14 @@ public class TopDownShootProjectile : MonoBehaviour {
 			{
 				if (animator != null)
 				{
-					if (animator.GetBool("FacingUp")) forceComponent.force = new Vector2(0f, projectileSpeed);
-					else if (animator.GetBool("FacingDown")) forceComponent.force = new Vector2(0f, -1*projectileSpeed);
-					else forceComponent.force = new Vector2((projSprite.flipX) ? -1*projectileSpeed : projectileSpeed, 0f);
+					Debug.Log("Setting bullet dir");
+					if (animator.GetBool("FacingUp")) {
+						Debug.Log("Facing UP" + projectileSpeed);
+						forceComponent.force = new Vector2(0f, projectileSpeed); 
+					}
+					else if (animator.GetBool("FacingDown")) { forceComponent.force = new Vector2(0f, -1 * projectileSpeed); }
+					else if (animator.GetBool("FacingLeft")) { forceComponent.force = new Vector2(-1 * projectileSpeed, 0f); }
+					else { forceComponent.force = new Vector2((projSprite.flipX) ? -1 * projectileSpeed : projectileSpeed, 0f); }
 				}
 				else forceComponent.force = new Vector2((projSprite.flipX) ? -1*projectileSpeed : projectileSpeed, 0f);
 			}
@@ -145,7 +150,7 @@ public class TopDownShootProjectile : MonoBehaviour {
 		{
 			if (animator != null) animator.SetBool("isShooting", true);
 
-			if (fireRateCounter == 0f && inventory.throwable)
+			if (fireRateCounter == 0f && inventory.throwable && inventory.throwableSelected)
 			{
 				Shoot();
 				fireRateCounter += Time.deltaTime;
