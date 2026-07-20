@@ -8,6 +8,7 @@ public class TriggerDialogue : MonoBehaviour
     private DialogueRunner dialogueRunner;
     private bool inDialogue;
     private string dialogueNode;
+    public GameObject buttonPrompt;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Dialogue"))
@@ -17,6 +18,7 @@ public class TriggerDialogue : MonoBehaviour
                 dialogueNode = collision.gameObject.GetComponent<NPCDialogue>().dialogueNode;
             }
             inDialogue = true;
+            buttonPrompt.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -24,6 +26,7 @@ public class TriggerDialogue : MonoBehaviour
         if (collision.CompareTag("Dialogue"))
         {
             inDialogue = false;
+            buttonPrompt.SetActive(false);
         }
     }
 

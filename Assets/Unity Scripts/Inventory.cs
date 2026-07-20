@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
     public GameObject stuffySelect;
     public GameObject keySelect;
     public GameObject throwableSelect;
+    public GameObject buttonPrompt;
     private GameObject item;
     private InventoryItem itemScript;
 
@@ -43,6 +44,7 @@ public class Inventory : MonoBehaviour
         {
            
             pickUp = true;
+            buttonPrompt.SetActive(true);
             item = collision.gameObject;
             itemScript = item.GetComponent<InventoryItem>();
         }
@@ -68,7 +70,7 @@ public class Inventory : MonoBehaviour
         if (collision.CompareTag("inventory"))
         {
             pickUp = false;
-            
+            buttonPrompt.SetActive(false);
         }
     }
     
