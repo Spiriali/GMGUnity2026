@@ -12,6 +12,7 @@ public class TriggerDialogue : MonoBehaviour
     private HealthSystemAttribute healthSystem;
     private Move movement;
     private Inventory inventory;
+    private Animator anim;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class TriggerDialogue : MonoBehaviour
         movement = GetComponent<Move>();
         inventory = GetComponent<Inventory>(); 
         dialogueRunner = dialogueSystem.GetComponent<DialogueRunner>();
+        anim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -51,6 +53,7 @@ public class TriggerDialogue : MonoBehaviour
             movement.enabled = false;
             inventory.enabled = false;
             healthSystem.inDialogue = true;
+            anim.SetBool("isWalking", false);
         }
     }
 
