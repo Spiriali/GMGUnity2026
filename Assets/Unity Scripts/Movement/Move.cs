@@ -72,6 +72,22 @@ public class Move : Physics2DObject
 				animator.SetBool("isWalking", true);
                 animator.SetFloat("LastInputY", moveVertical);
                 animator.SetFloat("LastInputX", moveHorizontal);
+                if (moveVertical > 0f && moveHorizontal == 0)
+                {
+                    animator.SetBool("FacingUp", true);
+                    animator.SetBool("FacingDown", false);
+                }
+                if (moveVertical < 0f && moveHorizontal == 0)
+                {
+                    animator.SetBool("FacingDown", true);
+                    animator.SetBool("FacingUp", false);
+                }
+                if (moveHorizontal < 0f)
+                {
+                    animator.SetBool("FacingLeft", true);
+                    animator.SetBool("FacingDown", false);
+                    animator.SetBool("FacingUp", false);
+                }
             }
 			if (moveHorizontal == 0f && moveVertical == 0f)
 			{
