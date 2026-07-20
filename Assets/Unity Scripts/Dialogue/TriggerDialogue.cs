@@ -21,6 +21,7 @@ public class TriggerDialogue : MonoBehaviour
         inventory = GetComponent<Inventory>(); 
         dialogueRunner = dialogueSystem.GetComponent<DialogueRunner>();
         anim = GetComponent<Animator>();
+        Invoke(nameof(DialogueOnStart), 1.5f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +36,7 @@ public class TriggerDialogue : MonoBehaviour
             buttonPrompt.SetActive(true);
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Dialogue"))
@@ -65,4 +67,12 @@ public class TriggerDialogue : MonoBehaviour
         inventory.enabled = true;
         healthSystem.inDialogue = false;
     }
+
+    private void DialogueOnStart(){
+        if(dialogueRunner.IsDialogueRunning)
+        {
+            healthSystem.inDialogue=true;
+        }
+    }
 }
+

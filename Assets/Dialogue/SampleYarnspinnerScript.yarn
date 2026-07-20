@@ -1,4 +1,4 @@
-﻿title: SampleYarnspinnerScript
+﻿title: StartAttic
 ---
 Sarah: Wha- huh, I guess this is better than an alarm. I would prefer my stuff to remain grounded though. Hey, Mr. Bow’s not floating though!
 Tutorial: Press Space
@@ -12,13 +12,94 @@ Mr. Bow: Sarah, calm down.
 Sarah: Not my name!
 Tutorial: Press E to throw
 Sarah: Oh I'm so sorry!
+<<dialogueend Player>>
 ===
 
-title: Are you okay
+title: Areyouokay
 ---
 Tutorial: Press F to interact
 Sarah: Are you alright? I don’t know what came over me!
 Mr. Bow: I’m fine, moving on from this discussion, we should find your mother if you feel something is wrong, those floating objects are rather concerning as well.
 Sarah: She should be in her room right?
 Mr. Bow: Most likely! Just down stairs and to the right!
+<<dialogueend Player>>
+===
+
+title: LaundryStart
+---
+Sarah: Do we really have to go down here? It's creepy!
+Mr. Bow: There could be something important, people leave stuff in their pockets all the time! We could be staring directly at the keys right now!
+Sarah: Uhh were not though, I’ll just go quick.
+<<dialogueend Player>>
+===
+
+title: LaundryMemory
+---
+Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like-
+Sarah sees the torn jeans in the wash, gasping dramatically 
+Sarah’s mom: Are you okay down there?
+Sarah: Yeah yeah yeah i’m so good, the best, the super best.
+<<dialogueend Player>>
+===
+
+title: KitchenStart
+---
+Sarah: Wow, I've never gotten to travel through the pipes before! That doorway was really cold though.
+Mr. Bow: Ah yes very fascinating, wait, what is happening to your mother’s soup over there!
+<<dialogueend Player>>
+===
+
+title: SoupPuzzleA
+---
+Mr. Bow: Try throwing some soup at that thing!
+<<dialogueend Player>>
+===
+
+title: SoupPuzzleB
+---
+Sarah: And so the soup was saved! I’m pretty hungry, I should take some of this for the journey ahead!
+Mr. Bow: We’re just going to find your- ah nevermind.
+Gained Cup of Soup :)
+<<dialogueend Player>>
+===
+
+title: KitchenMemory
+---
+Sarah sees her mom leaving out the front door
+Sarah: Where are you going? We have dinner soon, right?
+Sarah’s mom: I have a work thing, sorry i’ll be gone for just like 10 minutes, just 10!
+Sarah: I’m hungry right now though!
+Sarah’s mom: There's food in the uh fridge… place… yeah i’ll be right back!
+<<dialogueend Player>>
+===
+
+title: KitchenMemoryEnd
+---
+Sarah: It wasn’t 10 minutes.
+Mr. Bow: To your knowledge…
+Sarah: Huh?
+Mr. Bow: Nothing Sa-, Nothing.
+<<dialogueend Player>>
+===
+
+title: LivRmStart
+---
+Spookyyyy Noisesss
+Mr. Bow: What in the world was that!
+Sarah: It's here.
+Mr. Bow: Hurry! Hide!
+Sarah: I’m too close.
+<<dialogueend Player>>
+===
+
+title: NoteReveal
+---
+Sarah: That note...
+<<dialogueend Player>>
+===
+
+title: Alarm
+---
+Sarah: Not my favorite object...
+<<dialogueend Player>>
 ===
