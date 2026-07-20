@@ -35,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.9247804, y: 0.28219253, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.103629, y: 2.103629, z: 2.103629}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 0a287789ddc0c7f44bca9f3273b19a99, type: 3}
+  m_Sprite: {fileID: -3166623466986651411, guid: 275e57cf3669343418091d81cc6e6daf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,7 +180,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00330621, y: -0.3306036}
+  m_Offset: {x: -0.043909475, y: -0.36826247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -190,7 +190,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7156806, y: 0.3387928}
+  m_Size: {x: 0.52539027, y: 0.26347506}
   m_EdgeRadius: 0
 --- !u!114 &8824377718185040088
 MonoBehaviour:
@@ -220,9 +220,13 @@ MonoBehaviour:
   stuffy: 0
   throwable: 0
   key: 0
+  throwableSelected: 0
   stuffyImage: {fileID: 0}
   keyImage: {fileID: 0}
   throwableImage: {fileID: 0}
+  stuffySelect: {fileID: 0}
+  keySelect: {fileID: 0}
+  throwableSelect: {fileID: 0}
   healthSystem: {fileID: 7298909660762482563}
   stuffyObject: {fileID: 3558385506533827867, guid: 0e1de2c3e590c334582022e4f66ff9cf, type: 3}
   shootScript: {fileID: 0}
@@ -255,9 +259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDownShootProjectile
   projectilePrefab: {fileID: 6838195860478125434, guid: f6156e83b2154ce4f81ef7be2b0d38de, type: 3}
-  shootButton: 113
+  shootButton: 101
   projectilesPerSecond: 5
-  projectileSpeed: 1
+  projectileSpeed: 10
   fireInDirectionOfMouseCursor: 0
   inventory: {fileID: 6384117038227603115}
   soundFile: {fileID: 0}
@@ -272,7 +276,7 @@ Animator:
   m_GameObject: {fileID: 5784635856690441876}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ba055af379b02f4fa569a97f4ddaf6e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6c45a78ad9ac6a84593457532daddd27, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
