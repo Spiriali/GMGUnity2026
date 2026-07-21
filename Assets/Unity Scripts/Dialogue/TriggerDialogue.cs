@@ -72,6 +72,10 @@ public class TriggerDialogue : MonoBehaviour
         if(dialogueRunner.IsDialogueRunning)
         {
             healthSystem.inDialogue=true;
+            healthSystem.enabled = false;
+            movement.enabled = false;
+            inventory.enabled = false;
+            anim.SetBool("isWalking", false);
         }
     }
 }
