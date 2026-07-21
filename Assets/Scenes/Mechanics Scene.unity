@@ -4477,6 +4477,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2619699391341242266, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
+      propertyPath: healthChange
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 3141703595256504362, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.77
@@ -4972,6 +4976,10 @@ PrefabInstance:
     - target: {fileID: 1893237602569170941, guid: 8f8d5bb0f2fa31b439654c67c4e2e638, type: 3}
       propertyPath: m_Name
       value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280824462883270605, guid: 8f8d5bb0f2fa31b439654c67c4e2e638, type: 3}
+      propertyPath: healthChange
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 5665703270450857399, guid: 8f8d5bb0f2fa31b439654c67c4e2e638, type: 3}
       propertyPath: m_LocalPosition.x
