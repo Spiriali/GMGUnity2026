@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour {
 	private static GameManager gameMgr;
     public GameSettings Settings{ get; private set; }
 
+    public GameObject pauseMenu;
+
 	public static GameManager Inst()
 	{
 		if (gameMgr != null) return gameMgr;
@@ -46,8 +48,20 @@ public class GameManager : MonoBehaviour {
     public bool isPaused = false;
     public delegate void PauseHandler(bool pause);
     public event PauseHandler onPause;
-    public void PauseGame() 		{isPaused = true; Time.timeScale = 0; if (onPause != null) onPause(true);}
-    public void UnpauseGame() 	{isPaused = false; Time.timeScale = 1; if (onPause != null) onPause(false);}
+    public void PauseGame() 		{
+        isPaused = true; Time.timeScale = 0; if (onPause != null) onPause(true);
+        if (pauseMenu != null) 
+        { 
+            pauseMenu.SetActive(true);
+        }
+    }
+    public void UnpauseGame() 	{
+        isPaused = false; Time.timeScale = 1; if (onPause != null) onPause(false);
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
+    }
 
     //Getters
     	InputManager inputMgr;
@@ -85,6 +99,16 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            if (!isPaused)
+            {
+                PauseGame();
+            }
+            else
+            {
+                UnpauseGame();
+            }
+        }
 	}
 }

@@ -114,6 +114,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -122,11 +135,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 66
-        y: 261
+        y: 302
         width: 214
-        height: 239
+        height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,11 +157,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 351
-        y: 298
+        y: 302
         width: 224
-        height: 201
+        height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,121 +174,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: 2026_07_15_0m7_Kleki_2
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 264
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 107c2a9f6557736d0800000000000000
-      internalID: -3010808809458055423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2026_07_15_0m7_Kleki_3
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 265
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03ab4879c58bfe7e0800000000000000
-      internalID: -1733964623695791568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2026_07_15_0m7_Kleki_4
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 265
-        width: 27
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 404f283ac81d9bdf0800000000000000
-      internalID: -163869509453417468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2026_07_15_0m7_Kleki_5
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 264
-        width: 28
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5021a161eaf9f63c0800000000000000
-      internalID: -4364093943854788091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2026_07_15_0m7_Kleki_6
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 266
-        width: 31
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 398743ea996953480800000000000000
-      internalID: -8920057900140562285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 34bf7629e28185e47b52103be4a5ff1b
     internalID: 0
     vertices: []
     indices: 
@@ -292,6 +195,7 @@ TextureImporter:
       2026_07_15_0m7_Kleki_4: -163869509453417468
       2026_07_15_0m7_Kleki_5: -4364093943854788091
       2026_07_15_0m7_Kleki_6: -8920057900140562285
+      Greasy Key Icons (With text)_0: -264504290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
