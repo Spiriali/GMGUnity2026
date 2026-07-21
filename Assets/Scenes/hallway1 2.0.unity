@@ -10064,7 +10064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: 0
+  levelName: Master Bedroom
 --- !u!212 &1737988779
 SpriteRenderer:
   serializedVersion: 3
