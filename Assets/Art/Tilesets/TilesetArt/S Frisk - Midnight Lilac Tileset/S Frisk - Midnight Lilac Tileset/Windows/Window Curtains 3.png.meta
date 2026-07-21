@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8d2a17d5fc4f9de43a7edfa676b2cd93
+guid: be15d623123d9e847957da5f68678154
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2833513252131399001
-    second: tentacle1_0
+      213: -1419903183044104563
+    second: Window Curtains 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tentacle1_0
+      name: Window Curtains 3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
+        y: 0
         width: 32
-        height: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95567ab4a49a25720800000000000000
-      internalID: 2833513252131399001
+      spriteID: d8ea537f39d7b4ce0800000000000000
+      internalID: -1419903183044104563
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tentacle1_0: 2833513252131399001
+      Window Curtains 3_0: -1419903183044104563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
