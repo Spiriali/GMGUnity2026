@@ -103,3 +103,13 @@ title: Alarm
 Sarah: Not my favorite object...
 <<dialogueend Player>>
 ===
+
+title: Window
+---
+Sarah: This faces waffles.
+Mr. Bow: ... What?
+Sarah: Never, Eat, Soggy, Waffles, this way is waffles.
+Mr. Bow: Thats North.
+Sarah:... Waffles are cooler though.
+<<dialogueend Player>>
+===
