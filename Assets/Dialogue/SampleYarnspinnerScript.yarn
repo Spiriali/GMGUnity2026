@@ -42,6 +42,14 @@ Sarah: Yeah yeah yeah i’m so good, the best, the super best.
 <<dialogueend Player>>
 ===
 
+title: LaundryNote
+---
+Sarah: Hey, I think this fell from one of the clothes!
+Mr. Bow: What does it say?
+Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
+<<dialogueend Player>>
+===
+
 title: KitchenStart
 ---
 Sarah: Wow, I've never gotten to travel through the pipes before! That doorway was really cold though.
@@ -126,3 +134,5 @@ You melted down the sink!
 <<nextscene LoadLevel>>
 <<dialogueend Player>>
 ===
+
+
