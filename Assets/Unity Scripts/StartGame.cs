@@ -18,4 +18,12 @@ public class StartGame : MonoBehaviour
     {
         CreditScreen.SetActive(false);
     }
+
+    public void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit(); 
+        }
+    }
 }

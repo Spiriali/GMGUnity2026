@@ -126,3 +126,12 @@ You melted down the sink!
 <<nextscene LoadLevel>>
 <<dialogueend Player>>
 ===
+
+title: MasterBedroom
+---
+Sarah's Mom: Sarah, I don't understand why you've been so angry recently. 
+Sarah's Mom: Knocking over food, ruining my makeup, and ripping your stuffed animal?
+Sarah's Mom: Last of all... Yelling at me to go away. 
+Sarah's Mom: I'll give you your space for now, I'll be home later tonight.
+<<dialogueend Player>>
+===
