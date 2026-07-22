@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 6ec5fec53bca04c42a46cf304a241522
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2771446307958075682
+    second: Sarah_Idle_Sheet (2)_0
+  - first:
+      213: -1301259565157740019
+    second: Sarah_Idle_Sheet (2)_1
+  - first:
+      213: 3319102200603234505
+    second: Sarah_Idle_Sheet (2)_2
+  - first:
+      213: -6052237771811010294
+    second: Sarah_Idle_Sheet (2)_3
+  - first:
+      213: -180434018141408867
+    second: Sarah_Idle_Sheet (2)_4
+  - first:
+      213: -6910994364186583546
+    second: Sarah_Idle_Sheet (2)_5
+  - first:
+      213: -6701900540831852664
+    second: Sarah_Idle_Sheet (2)_6
+  - first:
+      213: 3133096426935594752
+    second: Sarah_Idle_Sheet (2)_7
+  - first:
+      213: -3165842287068913927
+    second: Sarah_Idle_Sheet (2)_8
+  - first:
+      213: 1237484025906671445
+    second: Sarah_Idle_Sheet (2)_9
+  - first:
+      213: -9144449599027287092
+    second: Sarah_Idle_Sheet (2)_10
+  - first:
+      213: -6153004382507081662
+    second: Sarah_Idle_Sheet (2)_11
+  - first:
+      213: -321451829609590346
+    second: Sarah_Idle_Sheet (2)_12
+  - first:
+      213: -5001035550677511494
+    second: Sarah_Idle_Sheet (2)_13
+  - first:
+      213: 4773006856996066444
+    second: Sarah_Idle_Sheet (2)_14
+  - first:
+      213: 6053640313490301435
+    second: Sarah_Idle_Sheet (2)_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede47144448d989d0800000000000000
+      internalID: -2771446307958075682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 191
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d029132e15ff0fde0800000000000000
+      internalID: -1301259565157740019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c05c28bdd1df0e20800000000000000
+      internalID: 3319102200603234505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 191
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09c00b00d1220ca0800000000000000
+      internalID: -6052237771811010294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91f84b6738fe7df0800000000000000
+      internalID: -180434018141408867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 191
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e9ee5ed373710a0800000000000000
+      internalID: -6910994364186583546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88718bf57f01ef2a0800000000000000
+      internalID: -6701900540831852664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 191
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00faa86b99efa7b20800000000000000
+      internalID: 3133096426935594752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fed858963ba014d0800000000000000
+      internalID: -3165842287068913927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 63
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f23634a2d6c2110800000000000000
+      internalID: 1237484025906671445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbe38ff983681180800000000000000
+      internalID: -9144449599027287092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 63
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2406e373d132c9aa0800000000000000
+      internalID: -6153004382507081662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b198bb9349f98bf0800000000000000
+      internalID: -321451829609590346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 63
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab254ccc9a0c89ab0800000000000000
+      internalID: -5001035550677511494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8411cda2702d3240800000000000000
+      internalID: 4773006856996066444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sarah_Idle_Sheet (2)_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 63
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1e293aac9d20450800000000000000
+      internalID: 6053640313490301435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sarah_Idle_Sheet (2)_0: -2771446307958075682
+      Sarah_Idle_Sheet (2)_1: -1301259565157740019
+      Sarah_Idle_Sheet (2)_10: -9144449599027287092
+      Sarah_Idle_Sheet (2)_11: -6153004382507081662
+      Sarah_Idle_Sheet (2)_12: -321451829609590346
+      Sarah_Idle_Sheet (2)_13: -5001035550677511494
+      Sarah_Idle_Sheet (2)_14: 4773006856996066444
+      Sarah_Idle_Sheet (2)_15: 6053640313490301435
+      Sarah_Idle_Sheet (2)_2: 3319102200603234505
+      Sarah_Idle_Sheet (2)_3: -6052237771811010294
+      Sarah_Idle_Sheet (2)_4: -180434018141408867
+      Sarah_Idle_Sheet (2)_5: -6910994364186583546
+      Sarah_Idle_Sheet (2)_6: -6701900540831852664
+      Sarah_Idle_Sheet (2)_7: 3133096426935594752
+      Sarah_Idle_Sheet (2)_8: -3165842287068913927
+      Sarah_Idle_Sheet (2)_9: 1237484025906671445
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

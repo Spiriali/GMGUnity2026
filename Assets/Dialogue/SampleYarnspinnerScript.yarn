@@ -42,6 +42,14 @@ Sarah: Yeah yeah yeah i’m so good, the best, the super best.
 <<dialogueend Player>>
 ===
 
+title: LaundryNote
+---
+Sarah: Hey, I think this fell from one of the clothes!
+Mr. Bow: What does it say?
+Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
+<<dialogueend Player>>
+===
+
 title: KitchenStart
 ---
 Sarah: Wow, I've never gotten to travel through the pipes before! That doorway was really cold though.
@@ -127,11 +135,4 @@ You melted down the sink!
 <<dialogueend Player>>
 ===
 
-title: MasterBedroom
----
-Sarah's Mom: Sarah, I don't understand why you've been so angry recently. 
-Sarah's Mom: Knocking over food, ruining my makeup, and ripping your stuffed animal?
-Sarah's Mom: Last of all... Yelling at me to go away. 
-Sarah's Mom: I'll give you your space for now, I'll be home later tonight.
-<<dialogueend Player>>
-===
+
