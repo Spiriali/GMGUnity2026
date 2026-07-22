@@ -12521,6 +12521,11 @@ Transform:
   - {fileID: 1323964411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1044499629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1029911299037075397, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 1711100195796753453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106014749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8926433730417534360, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
@@ -16647,7 +16652,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
   m_PrefabInstance: {fileID: 1711100195796753453}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1044499629}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9aff5eab828ef4f6399febda5f5f27f0, type: 3}
@@ -16658,6 +16663,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5111775890287210897, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
   m_PrefabInstance: {fileID: 1711100195796753453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2041588978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044499629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1711100195796753453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16935,7 +16957,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 789436911368077753, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1761607412}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1029911299037075397, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2041588978}
   m_SourcePrefab: {fileID: 100100000, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
 --- !u!224 &1711100195796753454 stripped
 RectTransform:
