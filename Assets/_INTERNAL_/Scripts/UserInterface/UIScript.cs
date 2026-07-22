@@ -234,6 +234,19 @@ public class UIScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
     }
+
+    public GameObject PauseScreen;
+    
+    public void ViewPause()
+    {
+        PauseScreen.SetActive(true);
+		Debug.Log("viewpause");
+    }
+
+    public void ClosePause()
+    {
+        PauseScreen.SetActive(false);
+    }
 }
 
 
