@@ -20,9 +20,13 @@ public class HealthSystemAttribute : MonoBehaviour
 	public bool stuffy = false;
 	public bool inDialogue = false;
 
-	
+    private void Awake()
+    {
+        maxHealth = health; //note down the maximum health to avoid going over it when the player gets healed
 
-	private void Start()
+    }
+
+    private void Start()
 	{
 		// Find the UI in the scene and store a reference for later use
 		ui = GameObject.FindObjectOfType<UIScript>();
@@ -51,10 +55,7 @@ public class HealthSystemAttribute : MonoBehaviour
 			&& playerNumber != -1)
 		{
 			ui.SetHealth(health, maxHealth, playerNumber);
-		}
-
-		maxHealth = health; //note down the maximum health to avoid going over it when the player gets healed
-		
+		}		
 			InvokeRepeating(nameof(ConstantLoss), loseEveryXSeconds, loseEveryXSeconds);
 		
 		
