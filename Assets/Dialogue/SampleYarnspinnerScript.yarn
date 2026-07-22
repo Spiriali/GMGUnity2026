@@ -10,8 +10,6 @@ Mr. Bow: Uh, if you are not Sarah, what is your name?
 Sarah: … I don’t know, it’s not Sarah though!
 Mr. Bow: Sarah, calm down.
 Sarah: Not my name!
-Tutorial: Press E to throw
-Sarah: Oh I'm so sorry!
 <<dialogueend Player>>
 ===
 
@@ -35,10 +33,11 @@ Sarah: Uhh were not though, I’ll just go quick.
 
 title: LaundryMemory
 ---
-Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like-
-Sarah sees the torn jeans in the wash, gasping dramatically 
+Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like- OMG
 Sarah’s mom: Are you okay down there?
 Sarah: Yeah yeah yeah i’m so good, the best, the super best.
+Sarah: These pants... Their torn! I have to knit them back together! 
+Sarah: There should be one of those box things around here, I can fix them with that!
 <<dialogueend Player>>
 ===
 
@@ -47,6 +46,13 @@ title: LaundryNote
 Sarah: Hey, I think this fell from one of the clothes!
 Mr. Bow: What does it say?
 Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
+<<dialogueend Player>>
+===
+
+title: LaundryKit
+---
+Sarah: Yay! We found the stabbing kit! I can totally fix these!
+<<nextscene LoadLevel>>
 <<dialogueend Player>>
 ===
 
@@ -96,7 +102,16 @@ Spookyyyy Noisesss
 Mr. Bow: What in the world was that!
 Sarah: It's here.
 Mr. Bow: Hurry! Hide!
-Sarah: I’m too close.
+Sarah: I think I can go behind the fireplace.
+<<dialogueend Player>>
+===
+
+title: LivRmHide
+---
+Sarah: ... I have to go
+Mr. Bow: But that thing is out there!
+Sarah: Hiding doesn't get me anywhere.
+Mr. Bow: Sarah!
 <<dialogueend Player>>
 ===
 
@@ -124,7 +139,7 @@ Sarah:... Waffles are cooler though.
 
 title: momnote
 ---
-mom:hey sarah,do you mind making sure the soup is ready by the time i get home? Make sure it does not not get ruined no matter what! Love mom.
+Mom: Hey sarah,do you mind making sure the soup is ready by the time i get home? Make sure it does not not get ruined no matter what! Love mom.
 <<dialogueend Player>>
 ===
 
@@ -135,4 +150,10 @@ You melted down the sink!
 <<dialogueend Player>>
 ===
 
-
+title: AtticCloset
+---
+Sarah: My Closet! I feel alllll safe from the shadows and things!
+Mr. Bow: I wish I could come in, I just can't fit!
+Sarah: Too bad I guess.
+<<dialogueend Player>>
+===
