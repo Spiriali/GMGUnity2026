@@ -7117,7 +7117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModifyHealthAttribute
   destroyWhenActivated: 0
-  healthChange: -1
+  healthChange: -10
 --- !u!212 &1832349721
 SpriteRenderer:
   serializedVersion: 3
