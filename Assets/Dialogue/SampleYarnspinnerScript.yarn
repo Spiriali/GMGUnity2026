@@ -33,10 +33,11 @@ Sarah: Uhh were not though, I’ll just go quick.
 
 title: LaundryMemory
 ---
-Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like-
-Sarah sees the torn jeans in the wash, gasping dramatically 
+Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like- OMG
 Sarah’s mom: Are you okay down there?
 Sarah: Yeah yeah yeah i’m so good, the best, the super best.
+Sarah: These pants... Their torn! I have to knit them back together! 
+Sarah: There should be one of those box things around here, I can fix them with that!
 <<dialogueend Player>>
 ===
 
@@ -50,8 +51,10 @@ Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
 
 title: LaundryKit
 ---
-Sarah: Yay! We found the stabbing kit!
-Mr. Bow: Love me a good stabbing kit, now we can fix those jeans right up!
+Sarah: Yay! We found the stabbing kit! I can totally fix these!
+<<nextscene LoadLevel>>
+<<dialogueend Player>>
+===
 
 title: KitchenStart
 ---
