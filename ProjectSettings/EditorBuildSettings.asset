@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/June/Level 2.unity
     guid: 414b899e5a894394c90f37232a6426b9
   - enabled: 1
+    path: Assets/Scenes/Laundry Memory.unity
+    guid: 05d9ce7f4f8340e47b448696ea767635
+  - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: 6ec436e18ecaf1d4eaaa3573751e5a50
   - enabled: 1
