@@ -10,8 +10,6 @@ Mr. Bow: Uh, if you are not Sarah, what is your name?
 Sarah: … I don’t know, it’s not Sarah though!
 Mr. Bow: Sarah, calm down.
 Sarah: Not my name!
-Tutorial: Press E to throw
-Sarah: Oh I'm so sorry!
 <<dialogueend Player>>
 ===
 
@@ -96,7 +94,16 @@ Spookyyyy Noisesss
 Mr. Bow: What in the world was that!
 Sarah: It's here.
 Mr. Bow: Hurry! Hide!
-Sarah: I’m too close.
+Sarah: I think I can go behind the fireplace.
+<<dialogueend Player>>
+===
+
+title: LivRmHide
+---
+Sarah: ... I have to go
+Mr. Bow: But that thing is out there!
+Sarah: Hiding doesn't get me anywhere.
+Mr. Bow: Sarah!
 <<dialogueend Player>>
 ===
 
