@@ -41,6 +41,11 @@ public class HealthSystemAttribute : MonoBehaviour
 				break;
 		}
 
+		if (AcrossScenes.instance != null) 
+		{
+			health = AcrossScenes.instance.health;
+		}
+
 		// Notify the UI so it will show the right initial amount
 		if(ui != null
 			&& playerNumber != -1)
@@ -80,6 +85,10 @@ public class HealthSystemAttribute : MonoBehaviour
         {
             Destroy(gameObject);
         }
+		if (AcrossScenes.instance != null) 
+		{
+			AcrossScenes.instance.health = health;
+		}
     }
 	
 	private void ConstantLoss()
