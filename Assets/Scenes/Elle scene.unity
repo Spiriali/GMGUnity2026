@@ -6910,7 +6910,7 @@ GameObject:
   - component: {fileID: 1733046838}
   - component: {fileID: 1733046837}
   m_Layer: 0
-  m_Name: soup
+  m_Name: pot of soup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7760,10 +7760,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1471532963}
   - {fileID: 263633146}
+  - {fileID: 1733046838}
   - {fileID: 1033837603}
   - {fileID: 1874625240}
   - {fileID: 938658903}
-  - {fileID: 1733046838}
   - {fileID: 1832349722}
   - {fileID: 229975217}
   - {fileID: 1071159148}
