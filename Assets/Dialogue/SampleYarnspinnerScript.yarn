@@ -227,3 +227,23 @@ Mr. Bow: Sarah…
 Sarah: That's not… I’m not…
 <<dialogueend Player>>
 ===
+
+title: HallwayText
+---
+Sarah: Noooo it won't open
+Mr. Bow: I'm sure the key will be somewhere around the house, we just have to find it!
+Sarah: Okay...
+<<dialogueend Player>>
+===
+
+title: BathroomMemory
+---
+Sarah’s mom: What do you think?
+Sarah: I look the same.
+Sarah’s mom: Your eyelids are blue! What color are they normally!
+Sarah: I like blue, I think
+Sarah’s mom: Well I think blue suits you well, now just go down stairs and we can start your birthday shopping!
+Sarah: Can we get blue pretzels?
+<<nextscene LoadLevel>>
+<<dialogueend Player>>
+===
