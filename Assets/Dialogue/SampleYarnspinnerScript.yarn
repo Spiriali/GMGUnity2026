@@ -155,13 +155,6 @@ Mom: Hey sarah,do you mind making sure the soup is ready by the time i get home?
 <<dialogueend Player>>
 ===
 
-title: sinkmelt
----
-You melted down the sink!
-<<nextscene LoadLevel>>
-<<dialogueend Player>>
-===
-
 title: AtticCloset
 ---
 Sarah: My Closet! I feel alllll safe from the shadows and things!
@@ -244,6 +237,14 @@ Sarah’s mom: Your eyelids are blue! What color are they normally!
 Sarah: I like blue, I think
 Sarah’s mom: Well I think blue suits you well, now just go down stairs and we can start your birthday shopping!
 Sarah: Can we get blue pretzels?
+<<nextscene LoadLevel>>
+<<dialogueend Player>>
+===
+
+title: PostBathroomMemory
+---
+Sarah: I, I remember, Mo-
+You melted down the sink!
 <<nextscene LoadLevel>>
 <<dialogueend Player>>
 ===
