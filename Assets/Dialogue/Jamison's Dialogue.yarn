@@ -1,8 +1,9 @@
 ﻿title: MasterBedroomEnd
 ---
-Sarah: Blah blah.
-Mr.Bow: Blah blah blah.
+Mom: Sarah, this is not a room you want to live with.
+Mom: You know what you have to do.
+Mom: This is not a dark place
 <<activate_object ActivateManager>>
-Mr.Bow: more blahs.
+Mom?: You're just a dark person.
 <<dialogueend Player>>
 ===

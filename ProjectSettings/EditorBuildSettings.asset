@@ -51,6 +51,12 @@ EditorBuildSettings:
     path: Assets/Scenes/hallway 2 stairs case exit.unity
     guid: 2570a0f98f79644bdb2fc90065775c6b
   - enabled: 1
+    path: Assets/Scenes/Bathroom Post-Memory.unity
+    guid: b1c9e8b0e3f23924986bc855ebf60f1c
+  - enabled: 1
+    path: Assets/Scenes/Bathroom Memory.unity
+    guid: 615b00a971d629e4f99251c70176629e
+  - enabled: 1
     path: Assets/Scenes/hallway1 from stairs.unity
     guid: f19d30896087e42acae2c01fb3eb2d6d
   - enabled: 1
