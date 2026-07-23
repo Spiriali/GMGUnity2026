@@ -1,0 +1,8 @@
+﻿title: MasterBedroomEnd
+---
+Sarah: Blah blah.
+Mr.Bow: Blah blah blah.
+<<activate_object ActivateManager>>
+Mr.Bow: more blahs.
+<<dialogueend Player>>
+===
