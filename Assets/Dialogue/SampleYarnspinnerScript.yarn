@@ -221,14 +221,6 @@ Sarah: That's not… I’m not…
 <<dialogueend Player>>
 ===
 
-title: HallwayText
----
-Sarah: Noooo it won't open
-Mr. Bow: I'm sure the key will be somewhere around the house, we just have to find it!
-Sarah: Okay...
-<<dialogueend Player>>
-===
-
 title: BathroomMemory
 ---
 Sarah’s mom: What do you think?
@@ -237,7 +229,7 @@ Sarah’s mom: Your eyelids are blue! What color are they normally!
 Sarah: I like blue, I think
 Sarah’s mom: Well I think blue suits you well, now just go down stairs and we can start your birthday shopping!
 Sarah: Can we get blue pretzels?
-<<nextscene LoadLevel>>
+<<nextscene NPC>>
 <<dialogueend Player>>
 ===
 
@@ -245,6 +237,16 @@ title: PostBathroomMemory
 ---
 Sarah: I, I remember, Mo-
 You melted down the sink!
-<<nextscene LoadLevel>>
+<<nextscene NPC>>
+<<dialogueend Player>>
+===
+
+title: MasterBedroomNote
+---
+Mom: Sarah, this is not a room you want to live with.
+Mom: You know what you have to do.
+Mom: This is not a dark place
+<<activate_object ActivateManager>>
+Mom?: You're just a dark person.
 <<dialogueend Player>>
 ===
