@@ -254,7 +254,6 @@ You melted down the sink!
 title: MasterBedroomNote
 ---
 Mom: Sarah, this is not a room you want to live with.
-Mom: You know what you have to do.
 Mom: This is not a dark place
 <<activate_object ActivateManager>>
 Mom?: You're just a dark person.
