@@ -56,6 +56,10 @@ Sarah: Yay! We found the stabbing kit! I can totally fix these!
 <<dialogueend Player>>
 ===
 
+title
+---
+Sarah
+
 title: KitchenStart
 ---
 Sarah: Wow, I've never gotten to travel through the pipes before! That doorway was really cold though.
