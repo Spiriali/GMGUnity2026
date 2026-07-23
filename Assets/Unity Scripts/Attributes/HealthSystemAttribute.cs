@@ -8,7 +8,7 @@ public class HealthSystemAttribute : MonoBehaviour
 	public int health = 10;
 
 	private UIScript ui;
-	private int maxHealth;
+	public int maxHealth;
 
 	// Will be set to 0 or 1 depending on how the GameObject is tagged
 	// it's -1 if the object is not a player

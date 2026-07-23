@@ -2332,8 +2332,8 @@ GameObject:
   - component: {fileID: 846117036}
   - component: {fileID: 846117035}
   - component: {fileID: 846117038}
-  - component: {fileID: 846117037}
   - component: {fileID: 846117039}
+  - component: {fileID: 846117040}
   m_Layer: 0
   m_Name: Misc Laundry Mess
   m_TagString: Dialogue
@@ -2416,27 +2416,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1545490199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.566}
---- !u!114 &846117037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846117034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9117653835b354259a0c03ce702840f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueBalloonAction
-  textToDisplay: This is the new clean laundry, Mom's gonna fold it soon so I shouldn't
-    step on it.
-  backgroundColor: {r: 0.44313726, g: 0.5176471, b: 0.57254905, a: 1}
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  targetObject: {fileID: 846117036}
-  disappearMode: 1
-  timeToDisappear: 2
-  keyToPress: 32
-  followingText: {fileID: 0}
 --- !u!61 &846117038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2492,19 +2471,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 846117034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2eb2d0a9b65a78345a55c55bd9d9e388, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
-  actions: []
-  useCustomActions: 0
-  customActions:
-    m_PersistentCalls:
-      m_Calls: []
-  happenOnlyOnce: 0
-  filterByTag: 0
-  filterTag: Player
-  frequency: 1
-  eventType: 0
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  dialogueNode: LaundryPile
+  levelLoad: 
+--- !u!61 &846117040
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846117034}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.31, y: 0.3}
+    newSize: {x: 0.31, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.31, y: 0.3}
+  m_EdgeRadius: 0
 --- !u!1001 &865976190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6306,11 +6323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.98
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.62
+      value: -4.27
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.z
