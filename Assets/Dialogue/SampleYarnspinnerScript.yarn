@@ -7,7 +7,7 @@ Mr. Bow: Very funny, Sarah what are you doing up.
 Sarah: I felt something weird tonight, then I saw all that stuff floating! I would appreciate it if you would stop calling me Sarah though, that's not my name.
 Mr. Bow: Uh, if you are not Sarah, what is your name?
 Sarah: … I don’t know, it’s not Sarah though!
-Mr. Bow: Sarah, calm down. Remember, you can press space bar anything to calm yourself down.
+Mr. Bow: Sarah, calm down. Remember, you can E anything to calm yourself down.
 Sarah: Not my name!
 <<dialogueend Player>>
 ===
@@ -54,6 +54,14 @@ title: LaundryKit
 ---
 Sarah: Yay! We found the stabbing kit! I can totally fix these!
 <<nextscene SewingKitNPC>>
+<<dialogueend Player>>
+===
+
+title: LaundryPile
+---
+Sarah: We CANNOT step on the CLEAN LAUNDRY. 
+Mr. Bow: Yeah respect the piles! Orginized chaos!
+Sarah: There a system! I think.
 <<dialogueend Player>>
 ===
 
@@ -207,7 +215,7 @@ Mr. Bow: As long as you stay hiden, everything will be all right.
 Sarah: I can't do that.
 Mr. Bow: No! You need to stay safe!
 Sarah: I'm to close to the end, and your not my mother, she hasn't been here for a long time.
-Mr: Bow: SARAH!
+Mr. Bow: SARAH!
 <<dialogueend Player>>
 ===
 
