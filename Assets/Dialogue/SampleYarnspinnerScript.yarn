@@ -227,3 +227,12 @@ Mr. Bow: Sarah…
 Sarah: That's not… I’m not…
 <<dialogueend Player>>
 ===
+
+title: hallwaylockedbedroom
+---
+locked
+Sarah: Hmm why is mom's door locked? She never locks it.
+Mr.Bow: What if she in the bathroom
+Sarah: Maybe...
+<<dialogueend Player>>
+===
