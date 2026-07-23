@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Closet
   - Locked
+  - InstantDialogue
   layers:
   - Default
   - TransparentFX

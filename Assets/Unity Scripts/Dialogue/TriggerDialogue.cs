@@ -13,6 +13,7 @@ public class TriggerDialogue : MonoBehaviour
     private Move movement;
     private Inventory inventory;
     private Animator anim;
+    private bool triggered = false;
 
     private void Start()
     {
@@ -34,6 +35,12 @@ public class TriggerDialogue : MonoBehaviour
             }
             inDialogue = true;
             buttonPrompt.SetActive(true);
+        }
+        if (collision.CompareTag("InstantDialogue") && !triggered)
+        {
+            dialogueNode = collision.gameObject.GetComponent<NPCDialogue>().dialogueNode;
+            StartDialogue();
+            triggered = true;
         }
     }
 
