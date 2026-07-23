@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3302968613310768421, guid: 540e6da164aa8b2439a6bd3319a30011, type: 3}
       propertyPath: startNode
-      value: EndingA
+      value: EndingB
       objectReference: {fileID: 0}
     - target: {fileID: 3483016841154813734, guid: 540e6da164aa8b2439a6bd3319a30011, type: 3}
       propertyPath: m_LocalPosition.x
