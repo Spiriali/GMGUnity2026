@@ -18,16 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/June/Level 2.unity
     guid: 414b899e5a894394c90f37232a6426b9
   - enabled: 1
-    path: Assets/Scenes/Laundry Memory.unity
-    guid: 05d9ce7f4f8340e47b448696ea767635
-  - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: 6ec436e18ecaf1d4eaaa3573751e5a50
   - enabled: 1
     path: Assets/Scenes/Attic Scene.unity
     guid: fcafebed88f7eac489d89409a27634dc
   - enabled: 1
-    path: Assets/Scenes/hallway 1.unity
+    path: Assets/Scenes/hallway 1 attic.unity
     guid: 2d2cbd3f559cd47368ffafcc2e49782d
   - enabled: 1
     path: Assets/Scenes/Bathroom.unity
@@ -36,19 +33,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Elle scene.unity
     guid: 086d9883155f9954fad7f5f153e2527e
   - enabled: 1
-    path: Assets/Scenes/hallway2.unity
+    path: Assets/Scenes/hallway2 refrigerator.unity
     guid: ea8ef7a0c665a4a8f87f068d83ce9f41
   - enabled: 1
-    path: Assets/Scenes/hallway2  1.unity
+    path: Assets/Scenes/hallway2 .laundry room exit.unity
     guid: 84a760c9337124bf48ee93d3d10b99ca
   - enabled: 1
     path: Assets/Scenes/Laundry scene.unity
     guid: 324fbcbe3351c3e4989b981c8c2886c5
   - enabled: 1
-    path: Assets/Scenes/hallway 2 2.unity
+    path: Assets/Scenes/Laundry Memory.unity
+    guid: 05d9ce7f4f8340e47b448696ea767635
+  - enabled: 1
+    path: Assets/Scenes/Laundry scene post-memory.unity
+    guid: ce21bd82998edf149a83b705bc6ee928
+  - enabled: 1
+    path: Assets/Scenes/hallway 2 stairs case exit.unity
     guid: 2570a0f98f79644bdb2fc90065775c6b
   - enabled: 1
-    path: Assets/Scenes/hallway1 1.unity
+    path: Assets/Scenes/hallway1 from stairs.unity
     guid: f19d30896087e42acae2c01fb3eb2d6d
   - enabled: 1
     path: Assets/Scenes/Master Bedroom.unity
@@ -56,6 +59,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Living Room.unity
     guid: 3f1d19308612d684a902176f85fde418
+  - enabled: 1
+    path: Assets/Scenes/Ending #1.unity
+    guid: 990b57421ec6ee14eae0a8163db6418e
+  - enabled: 1
+    path: Assets/Scenes/Ending #2.unity
+    guid: d8710936c3de55344a76a769e935a295
   - enabled: 0
     path: Assets/Scenes/example.unity
     guid: 1daf0d41d44d52e4886afa61ec6b22a0

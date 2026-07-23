@@ -13,6 +13,7 @@ public class TriggerDialogue : MonoBehaviour
     private Move movement;
     private Inventory inventory;
     private Animator anim;
+    private bool triggered = false;
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class TriggerDialogue : MonoBehaviour
         inventory = GetComponent<Inventory>(); 
         dialogueRunner = dialogueSystem.GetComponent<DialogueRunner>();
         anim = GetComponent<Animator>();
-        Invoke(nameof(DialogueOnStart), 1.5f);
+        Invoke(nameof(DialogueOnStart), 0.2f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,6 +35,12 @@ public class TriggerDialogue : MonoBehaviour
             }
             inDialogue = true;
             buttonPrompt.SetActive(true);
+        }
+        if (collision.CompareTag("InstantDialogue") && !triggered)
+        {
+            dialogueNode = collision.gameObject.GetComponent<NPCDialogue>().dialogueNode;
+            StartDialogue();
+            triggered = true;
         }
     }
 
@@ -50,13 +57,18 @@ public class TriggerDialogue : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F) && inDialogue && dialogueNode!=null && !dialogueRunner.IsDialogueRunning)
         {
-            dialogueRunner.StartDialogue(dialogueNode);
-            healthSystem.enabled = false;
-            movement.enabled = false;
-            inventory.enabled = false;
-            healthSystem.inDialogue = true;
-            anim.SetBool("isWalking", false);
+            StartDialogue();
         }
+    }
+
+    public void StartDialogue()
+    {
+        dialogueRunner.StartDialogue(dialogueNode);
+        healthSystem.enabled = false;
+        movement.enabled = false;
+        inventory.enabled = false;
+        healthSystem.inDialogue = true;
+        anim.SetBool("isWalking", false);
     }
 
     [YarnCommand("dialogueend")]

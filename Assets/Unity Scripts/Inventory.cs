@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class Inventory : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Inventory : MonoBehaviour
     private bool stuffySelected = false;
     private bool keySelected = false;
     public bool throwableSelected = false;
+    private bool shouldDestroy = false;
 
     public GameObject stuffyImage;
     public GameObject keyImage;
@@ -31,10 +33,18 @@ public class Inventory : MonoBehaviour
 
     private GameObject door;
 
+    [SerializeField] DialogueRunner dialogue;
+
     private void Start()
     {
         shootScript = GetComponent<TopDownShootProjectile>();
         moveScript = GetComponent<Move>();
+        if (AcrossScenes.instance != null)
+        {
+            if (AcrossScenes.instance.hasStuffy) { StuffyPickUp(); }
+            if (AcrossScenes.instance.hasKey) { KeyPickUp(); }
+            if (AcrossScenes.instance.hasThrowable) { ThrowablePickUp(); }
+        }
     }
 
     
@@ -57,6 +67,11 @@ public class Inventory : MonoBehaviour
                 StuffyLoss();
                 //sprite of stuffy appears in the enviornment outside of the closet
                 Instantiate(stuffyObject, collision.gameObject.GetComponent<Closet>().spawnLocation, Quaternion.identity);
+                if (AcrossScenes.instance != null && AcrossScenes.instance.firstCloset)
+                {
+                    dialogue.StartDialogue("AtticCloset");
+                    AcrossScenes.instance.firstCloset = false;
+                }
             }
         }
         if (collision.CompareTag("Locked"))
@@ -78,13 +93,26 @@ public class Inventory : MonoBehaviour
     {
         if (pickUp && Input.GetKey(KeyCode.F))
         {
-            StuffyPickUp();
-            ThrowablePickUp();
-            KeyPickUp();
+            if (itemScript.stuffy && stuffy!= true)
+            {
+                StuffyPickUp();
+                shouldDestroy = true;
+            }
+            if (itemScript.throwable && throwable!= true)
+            {
+                ThrowablePickUp();
+                shouldDestroy = true;
+            }
+            if (itemScript.key && key != true)
+            {
+                KeyPickUp();
+                shouldDestroy = true;
+            }
            if (itemScript.disappear) 
            {
              itemScript.Disappear();
-           }
+                shouldDestroy = false;
+            }
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -131,14 +159,20 @@ public class Inventory : MonoBehaviour
             throwableSelect.SetActive(throwableSelected);
         }
     }
-    
-    private void StuffyPickUp()
+
+    [YarnCommand("stuffypickup")]
+    public void StuffyPickUp()
     {
-        if (itemScript.stuffy) 
-        {
             stuffy = true;
             stuffyImage.SetActive(true);
             healthSystem.stuffy = true;
+            if (AcrossScenes.instance != null)
+            {
+                AcrossScenes.instance.hasStuffy = true;
+            }
+            if (itemScript!= null)
+        {
+            itemScript.Disappear();
         }
     }
     public void StuffyLoss()
@@ -146,32 +180,46 @@ public class Inventory : MonoBehaviour
        stuffy = false;
        stuffyImage.SetActive(false);
        healthSystem.stuffy = false;
+        if (AcrossScenes.instance != null)
+        {
+            AcrossScenes.instance.hasStuffy = false;
+        }
     }
     private void KeyPickUp()
     {
-        if (itemScript.key)
-        {
             key = true;
             keyImage.SetActive(true);
-        }
+            if (AcrossScenes.instance != null)
+            {
+                AcrossScenes.instance.hasKey = true;
+            }
     }
     public void KeyLoss()
     {
         key = false;
         keyImage.SetActive(false);
+        if (AcrossScenes.instance != null)
+        {
+            AcrossScenes.instance.hasKey = false;
+        }
     }
     private void ThrowablePickUp()
     {
-        if (itemScript.throwable)
-        {
             throwable = true;
             throwableImage.SetActive(true);
-        }
+            if (AcrossScenes.instance != null)
+            {
+                AcrossScenes.instance.hasThrowable = true;
+            }
     }
     public void ThrowableLoss()
     {
         throwable = false;
         throwableImage.SetActive(false);
+        if (AcrossScenes.instance != null)
+        {
+            AcrossScenes.instance.hasThrowable = false;
+        }
     }
 
     private void EnableMoveShoot()

@@ -18,9 +18,11 @@ public class Patrol : Physics2DObject
 
 	private Vector2[] newWaypoints;
 	private int currentTargetIndex;
+	private SpriteRenderer spriteRenderer;
 
 	void Start ()
 	{
+		spriteRenderer = GetComponent<SpriteRenderer>();
 		currentTargetIndex = 0;
 
 		newWaypoints = new Vector2[waypoints.Length+1];
@@ -38,8 +40,12 @@ public class Patrol : Physics2DObject
 
 		if(orientToDirection)
 		{
-			Utils.SetAxisTowards(lookAxis, transform, ((Vector3)newWaypoints[1] - transform.position).normalized);
-		}
+			//Utils.SetAxisTowards(lookAxis, transform, ((Vector3)newWaypoints[1] - transform.position).normalized);
+            
+            if ((newWaypoints[1].x - transform.position.x) >= 0f) { spriteRenderer.flipX = true; }
+            else { spriteRenderer.flipX = false; }
+            
+        }
 	}
 	
 	public void FixedUpdate ()
@@ -55,8 +61,9 @@ public class Patrol : Physics2DObject
 			if(orientToDirection)
 			{
 				currentTarget = newWaypoints[currentTargetIndex];
-				Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
-			}
+                if ((currentTarget.x - transform.position.x) >= 0f) { spriteRenderer.flipX = true; }
+                else { spriteRenderer.flipX = false; }
+            }
 		}
 	}
 
