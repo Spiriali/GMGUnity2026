@@ -676,6 +676,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &657454864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5238811910370767472, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 2013563305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &753122121
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,6 +3729,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &753260504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5608939269415144346, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 2013563305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &796697857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8096,6 +8106,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -182.4}
+--- !u!1 &1101857080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2151405527272611558, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 2013563305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1144174379
 GameObject:
   m_ObjectHideFlags: 0
@@ -10866,7 +10881,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 140955956436821150, guid: ec2c11737b4807345ade1c5abe5c297f, type: 3}
       propertyPath: dialogueNode
-      value: ' hallwaylockedbedroom'
+      value: hallwaylockedbedroom
       objectReference: {fileID: 0}
     - target: {fileID: 5255313747976823064, guid: ec2c11737b4807345ade1c5abe5c297f, type: 3}
       propertyPath: m_Name
@@ -11596,6 +11611,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1837436114}
     - target: {fileID: 6384117038227603115, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+      propertyPath: keySelect
+      value: 
+      objectReference: {fileID: 1101857080}
+    - target: {fileID: 6384117038227603115, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
       propertyPath: stuffyImage
       value: 
       objectReference: {fileID: 2013563306}
@@ -11604,9 +11623,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3558385506533827867, guid: 0e1de2c3e590c334582022e4f66ff9cf, type: 3}
     - target: {fileID: 6384117038227603115, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+      propertyPath: stuffySelect
+      value: 
+      objectReference: {fileID: 657454864}
+    - target: {fileID: 6384117038227603115, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
       propertyPath: throwableImage
       value: 
       objectReference: {fileID: 305443602}
+    - target: {fileID: 6384117038227603115, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+      propertyPath: throwableSelect
+      value: 
+      objectReference: {fileID: 753260504}
     - target: {fileID: 7298909660762482563, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
       propertyPath: stuffy
       value: 0
