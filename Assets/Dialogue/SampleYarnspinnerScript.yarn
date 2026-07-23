@@ -1,25 +1,26 @@
 ﻿title: StartAttic
 ---
 Sarah: Wha- huh, I guess this is better than an alarm. I would prefer my stuff to remain grounded though. Hey, Mr. Bow’s not floating though!
-Tutorial: Press Space
 Mr. Bow: Why hello there dear Sarah!
 Sarah: Hi Mr. Bow! It's me, not Sarah.
 Mr. Bow: Very funny, Sarah what are you doing up.
 Sarah: I felt something weird tonight, then I saw all that stuff floating! I would appreciate it if you would stop calling me Sarah though, that's not my name.
 Mr. Bow: Uh, if you are not Sarah, what is your name?
 Sarah: … I don’t know, it’s not Sarah though!
-Mr. Bow: Sarah, calm down.
+Mr. Bow: Sarah, calm down. Remember, you can press space bar anything to calm yourself down.
 Sarah: Not my name!
 <<dialogueend Player>>
 ===
 
 title: Areyouokay
 ---
-Tutorial: Press F to interact
 Sarah: Are you alright? I don’t know what came over me!
-Mr. Bow: I’m fine, moving on from this discussion, we should find your mother if you feel something is wrong, those floating objects are rather concerning as well.
+Mr. Bow: I’m fine, very good throw, E makes a great throwing button.
+Mr. Bow: Moving on from this discussion, we should find your mother if you feel something is wrong, those floating objects are rather concerning as well.
 Sarah: She should be in her room right?
-Mr. Bow: Most likely! Just down stairs and to the right!
+Mr. Bow: Most likely! Just down stairs and to the right! As long as you remember to follow post-it note you see along way you should be off to a great adventure!
+Sarah: Okay! Post-its and adventure!
+<<stuffypickup Player>>
 <<dialogueend Player>>
 ===
 
@@ -52,7 +53,7 @@ Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
 title: LaundryKit
 ---
 Sarah: Yay! We found the stabbing kit! I can totally fix these!
-<<nextscene LoadLevel>>
+<<nextscene SewingKitNPC>>
 <<dialogueend Player>>
 ===
 
@@ -118,6 +119,9 @@ Mr. Bow: Sarah!
 title: NoteReveal
 ---
 Sarah: That note...
+OBITUARY: Kimberly Born: 1973 Died: 2005 Mother to Sarah ~~~~~~~~~ Found by her daughter at 6:33pm, ~~~~~~~~~~~~~~~~ Police informed three days after death ~~~~~~~~~~~~~~ Will be dearly Missed.
+Sarah: ...
+Sarah: I'm all most out.
 <<dialogueend Player>>
 ===
 
@@ -155,5 +159,63 @@ title: AtticCloset
 Sarah: My Closet! I feel alllll safe from the shadows and things!
 Mr. Bow: I wish I could come in, I just can't fit!
 Sarah: Too bad I guess.
+<<dialogueend Player>>
+===
+
+title: EndingA
+---
+???: I'm awake again aren't I?
+???: Again and Again.
+???: It's cold here.
+???: Maybe that's in my head.
+???: I know the rest of it wasn't.
+???: If it was in my head I'd forget.
+???: But cold you remember.
+???: The cold room after cold room.
+???: The cold remembers what you can forget.
+???: It remembers so you can forget.
+???: I can't forget Sarah though.
+Arhsa: A little girl with little to her name left out in a not so little world.
+Rasha: Would be crazy, but it's not.
+Sahra: Maybe i'm Sarah, maybe i'm not
+Ahras: Maybe she died like that one woman in the big house on a little street
+Hasar: Maybe...
+Sarah: Maybe it's time for My Name To Be Sarah Again.
+<<dialogueend Player>>
+===
+
+title: EndingB
+---
+???: I’m here.
+???: I’m alive.
+???: More than some at least.
+???: So many years spent with these little shadows, silhouettes. 
+???: Comforting, watching, everything in between.
+Arhsa: Why am I still here?
+Rasha: I’m away, it's over, I have a house, a job, why are six year old shadows following me?
+Sahra: Decades on decades and I still hear phones ring.
+Ahras: I still can’t answer them.
+Hasar: I still can’t end this maze.
+Sarah: Can I Even Still Be Sarah?
+<<dialogueend Player>>
+===
+
+title: LivRmFireplace
+---
+Sarah: ...
+Mr. Bow: As long as you stay hiden, everything will be all right.
+Sarah: I can't do that.
+Mr. Bow: No! You need to stay safe!
+Sarah: I'm to close to the end, and your not my mother, she hasn't been here for a long time.
+Mr: Bow: SARAH!
+<<dialogueend Player>>
+===
+
+title: LaundryPostMemory
+---
+Mr. Bow: Well those are some very nice jeans! I bet your mother loved the… expert stitching!
+Sarah: I wonder if she did…
+Mr. Bow: Sarah…
+Sarah: That's not… I’m not…
 <<dialogueend Player>>
 ===
