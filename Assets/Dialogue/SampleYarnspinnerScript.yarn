@@ -236,8 +236,8 @@ title: BathroomMemory
 Sarah’s mom: What do you think?
 Sarah: I look the same.
 Sarah’s mom: Your eyelids are blue! What color are they normally!
-Sarah: I like blue, I think
-Sarah’s mom: Well I think blue suits you well, now just go down stairs and we can start your birthday shopping!
+Sarah: I like blue, I think.
+Sarah’s mom: Blue is the color of the ocean
 Sarah: Can we get blue pretzels?
 <<nextscene NPC>>
 <<dialogueend Player>>
@@ -254,7 +254,6 @@ You melted down the sink!
 title: MasterBedroomNote
 ---
 Mom: Sarah, this is not a room you want to live with.
-Mom: You know what you have to do.
 Mom: This is not a dark place
 <<activate_object ActivateManager>>
 Mom?: You're just a dark person.
