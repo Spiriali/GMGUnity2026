@@ -221,17 +221,13 @@ Sarah: That's not… I’m not…
 <<dialogueend Player>>
 ===
 
-title: hallwaylockedbedroom
+title:  hallwaylockedbedroom
 ---
 locked
-Sarah: Hmm why is mom's door locked? She never locks it.
-Mr.Bow: What if she in the bathroom
-Sarah: Maybe...
-title: HallwayText
----
 Sarah: Noooo it won't open
 Mr. Bow: I'm sure the key will be somewhere around the house, we just have to find it!
 Sarah: Okay...
+Mr. Bow: lets check the bathroom while we are up here.
 <<dialogueend Player>>
 ===
 
