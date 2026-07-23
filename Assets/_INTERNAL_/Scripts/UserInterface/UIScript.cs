@@ -27,6 +27,7 @@ public class UIScript : MonoBehaviour
 	public float width = 350f;
 	public float height = 50f;
 	[SerializeField] RectTransform healthbar;
+	public HealthSystemAttribute healthSystem;
 
 
 	// Internal variables to keep track of score, health, and resources, win state
@@ -130,7 +131,13 @@ public class UIScript : MonoBehaviour
 	        statsPanel.SetActive(false);
 	        gameOverPanel.SetActive(true);
             Invoke("ReloadScene", 2);
-	    }
+            if (AcrossScenes.instance != null)
+            {
+                AcrossScenes.instance.health = 10;
+				healthSystem.health = 10;
+                SetHealth(healthSystem.health, healthSystem.maxHealth, playerNumber);
+            }
+        }
 	}
 
 
