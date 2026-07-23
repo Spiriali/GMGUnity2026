@@ -254,6 +254,12 @@ public class UIScript : MonoBehaviour
     {
         PauseScreen.SetActive(false);
     }
+
+    
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
 
 
