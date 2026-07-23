@@ -10866,7 +10866,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 140955956436821150, guid: ec2c11737b4807345ade1c5abe5c297f, type: 3}
       propertyPath: dialogueNode
-      value: hallwaylockedbedroom
+      value: ' hallwaylockedbedroom'
       objectReference: {fileID: 0}
     - target: {fileID: 5255313747976823064, guid: ec2c11737b4807345ade1c5abe5c297f, type: 3}
       propertyPath: m_Name
