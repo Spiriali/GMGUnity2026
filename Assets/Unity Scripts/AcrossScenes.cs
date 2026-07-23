@@ -7,6 +7,7 @@ public class AcrossScenes : MonoBehaviour
     public bool hasStuffy = false;
     public bool hasThrowable = false;
     public int health = 10;
+    public bool firstCloset = true;
 
     private void Awake()
     {

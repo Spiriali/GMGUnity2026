@@ -20,6 +20,7 @@ Sarah: Are you alright? I don’t know what came over me!
 Mr. Bow: I’m fine, moving on from this discussion, we should find your mother if you feel something is wrong, those floating objects are rather concerning as well.
 Sarah: She should be in her room right?
 Mr. Bow: Most likely! Just down stairs and to the right!
+<<stuffypickup Player>>
 <<dialogueend Player>>
 ===
 
@@ -52,7 +53,7 @@ Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
 title: LaundryKit
 ---
 Sarah: Yay! We found the stabbing kit! I can totally fix these!
-<<nextscene LoadLevel>>
+<<nextscene SewingKitNPC>>
 <<dialogueend Player>>
 ===
 

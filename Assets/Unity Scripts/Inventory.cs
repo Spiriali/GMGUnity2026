@@ -1,4 +1,5 @@
 using UnityEngine;
+using Yarn.Unity;
 
 public class Inventory : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class Inventory : MonoBehaviour
 
     private GameObject door;
 
+    [SerializeField] DialogueRunner dialogue;
+
     private void Start()
     {
         shootScript = GetComponent<TopDownShootProjectile>();
@@ -64,6 +67,11 @@ public class Inventory : MonoBehaviour
                 StuffyLoss();
                 //sprite of stuffy appears in the enviornment outside of the closet
                 Instantiate(stuffyObject, collision.gameObject.GetComponent<Closet>().spawnLocation, Quaternion.identity);
+                if (AcrossScenes.instance != null && AcrossScenes.instance.firstCloset)
+                {
+                    dialogue.StartDialogue("AtticCloset");
+                    AcrossScenes.instance.firstCloset = false;
+                }
             }
         }
         if (collision.CompareTag("Locked"))
@@ -151,8 +159,9 @@ public class Inventory : MonoBehaviour
             throwableSelect.SetActive(throwableSelected);
         }
     }
-    
-    private void StuffyPickUp()
+
+    [YarnCommand("stuffypickup")]
+    public void StuffyPickUp()
     {
             stuffy = true;
             stuffyImage.SetActive(true);
@@ -161,6 +170,10 @@ public class Inventory : MonoBehaviour
             {
                 AcrossScenes.instance.hasStuffy = true;
             }
+            if (itemScript!= null)
+        {
+            itemScript.Disappear();
+        }
     }
     public void StuffyLoss()
     {

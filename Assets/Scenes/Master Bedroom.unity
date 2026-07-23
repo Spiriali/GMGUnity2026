@@ -290,6 +290,79 @@ Transform:
   - {fileID: 1997232045}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &215225127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 608183817926250416, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815441182354035235, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4665964620445052959, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_Name
+      value: Load Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417565233816969254, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: levelName
+      value: Living Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.045850277
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.259016
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
 --- !u!1 &241746314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2151405527272611558, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
@@ -16689,6 +16762,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 259951893630066332, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: autoStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259951893630066332, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       propertyPath: onNodeComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -17434,3 +17511,4 @@ SceneRoots:
   - {fileID: 81588087}
   - {fileID: 1956975142}
   - {fileID: 1864140255}
+  - {fileID: 215225127}
