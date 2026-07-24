@@ -940,11 +940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3141703595256504362, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: -2.01
       objectReference: {fileID: 0}
     - target: {fileID: 3141703595256504362, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.51
+      value: -3.03
       objectReference: {fileID: 0}
     - target: {fileID: 3141703595256504362, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1066,6 +1066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jerry Activator
       objectReference: {fileID: 0}
+    - target: {fileID: 8457893162984837602, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9191085345020715496, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1090,11 +1094,11 @@ PrefabInstance:
       addedObject: {fileID: 1366328503}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1392857019}
+      insertIndex: -1
+      addedObject: {fileID: 1392857029}
     - targetCorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
-      insertIndex: 7
-      addedObject: {fileID: 1392857020}
+      insertIndex: -1
+      addedObject: {fileID: 1392857028}
   m_SourcePrefab: {fileID: 100100000, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
 --- !u!1001 &337536566
 PrefabInstance:
@@ -8792,11 +8796,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.29
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.07
+      value: -0.34
       objectReference: {fileID: 0}
     - target: {fileID: 8061252941200552305, guid: b98e132a15b2dc34eb91884bb0451edb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9472,7 +9476,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
   m_PrefabInstance: {fileID: 294999661}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1392857019
+--- !u!114 &1392857028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9484,8 +9488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: Level 2
---- !u!114 &1392857020
+  levelName: Ending1
+--- !u!114 &1392857029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9498,7 +9502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
   actions:
-  - {fileID: 260315837}
+  - {fileID: 1392857028}
   useCustomActions: 0
   customActions:
     m_PersistentCalls:
@@ -10125,7 +10129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417565233816969254, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
       propertyPath: levelName
-      value: Ending1
+      value: Ending2
       objectReference: {fileID: 0}
     - target: {fileID: 7510046787393296117, guid: c09c22631a45a864aaf5b6df61bcf300, type: 3}
       propertyPath: m_LocalScale.x
