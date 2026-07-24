@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Required for loading scenes
+using UnityEngine.SceneManagement; 
 
 public class SceneFadeController : MonoBehaviour
 {
     public Animator blackScreenAnimator;
-    public string sceneToLoad = "YourSceneNameHere"; // Type your exact scene name here
+    public string sceneToLoad = "YourSceneNameHere"; 
 
-    // Triggers the black screen fade (Already using this)
+    
     public void TriggerScreenFade()
     {
         if (blackScreenAnimator != null)
@@ -15,7 +15,7 @@ public class SceneFadeController : MonoBehaviour
         }
     }
 
-    // NEW: Call this at the end of the fade animation
+    
     public void LoadNextScene()
     {
         SceneManager.LoadScene(sceneToLoad);
