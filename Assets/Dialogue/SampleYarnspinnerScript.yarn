@@ -1,13 +1,13 @@
 ﻿title: StartAttic
 ---
-Sarah: Wha- huh, I guess this is better than an alarm. I would prefer my stuff to remain grounded though. Hey, Mr. Bow’s not floating though!
-Mr. Bow: Why hello there dear Sarah!
+Sarah: Wha- huh, I guess this is better than an alarm. I would prefer my stuff to remain grounded, though. But hey, Mr. Bow’s not floating!
+Mr. Bow: Why, hello there, dear Sarah!
 Sarah: Hi Mr. Bow! It's me, not Sarah.
-Mr. Bow: Very funny, Sarah what are you doing up.
+Mr. Bow: Very funny, Sarah. What are you doing up?
 Sarah: I felt something weird tonight, then I saw all that stuff floating! I would appreciate it if you would stop calling me Sarah though, that's not my name.
 Mr. Bow: Uh, if you are not Sarah, what is your name?
-Sarah: … I don’t know, it’s not Sarah though!
-Mr. Bow: Sarah, calm down. Remember, you can E anything to calm yourself down.
+Sarah: … I don’t know. It’s not Sarah though!
+Mr. Bow: Sarah, calm down. Remember, you can <i>E</i> anything to calm yourself down.
 Sarah: Not my name!
 <<dialogueend Player>>
 ===
@@ -15,10 +15,10 @@ Sarah: Not my name!
 title: Areyouokay
 ---
 Sarah: Are you alright? I don’t know what came over me!
-Mr. Bow: I’m fine, very good throw, E makes a great throwing button.
-Mr. Bow: Moving on from this discussion, we should find your mother if you feel something is wrong, those floating objects are rather concerning as well.
+Mr. Bow: The better question is, are <i>you</i> alright? I'm glad you picked me up with <i>F</i>. I'll protect you. Press <i>1</i> to select me and <i>E</i> to use me.
+Mr. Bow: We should find your mother if you feel something is wrong. Those floating objects are rather concerning as well.
 Sarah: She should be in her room right?
-Mr. Bow: Most likely! Just down stairs and to the right! As long as you remember to follow post-it note you see along way you should be off to a great adventure!
+Mr. Bow: Most likely! Just downstairs and to the right! As long as you remember to follow post-it notes you see along way, you should be off to a great adventure!
 Sarah: Okay! Post-its and adventure!
 <<stuffypickup Player>>
 <<dialogueend Player>>
@@ -27,17 +27,18 @@ Sarah: Okay! Post-its and adventure!
 title: LaundryStart
 ---
 Sarah: Do we really have to go down here? It's creepy!
-Mr. Bow: There could be something important, people leave stuff in their pockets all the time! We could be staring directly at the keys right now!
-Sarah: Uhh were not though, I’ll just go quick.
+Mr. Bow: There could be something important. People leave stuff in their pockets all the time! We could be staring directly at the keys right now!
+Sarah: Uhh, we're not though. 
+Sarah: ...I’ll just go quick.
 <<dialogueend Player>>
 ===
 
 title: LaundryMemory
 ---
-Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like- OMG
+Sarah: Mr. Bow, it's so important that you have a hat now. Hats are like so cool and like- OMG!
 Sarah’s mom: Are you okay down there?
-Sarah: Yeah yeah yeah i’m so good, the best, the super best.
-Sarah: These pants... Their torn! I have to knit them back together! 
+Sarah: Yeah yeah yeah, I’m so good, the best, the super best.
+Sarah: These pants... they're torn! I have to knit them back together! 
 Sarah: There should be one of those box things around here, I can fix them with that!
 <<dialogueend Player>>
 ===
@@ -46,13 +47,13 @@ title: LaundryNote
 ---
 Sarah: Hey, I think this fell from one of the clothes!
 Mr. Bow: What does it say?
-Sarah: I can't read it, theres a ton of water, i'll just hold on to it for now.
+Sarah: I can't read it, there's a ton of water damage. I'll just hold on to it for now.
 <<dialogueend Player>>
 ===
 
 title: LaundryKit
 ---
-Sarah: Yay! We found the stabbing kit! I can totally fix these!
+Sarah: Yay! We found the stabbing kit! I can totally fix the clothes!
 <<nextscene SewingKitNPC>>
 <<dialogueend Player>>
 ===
@@ -68,7 +69,7 @@ Sarah: There a system! I think.
 title: KitchenStart
 ---
 Sarah: Wow, I've never gotten to travel through the pipes before! That doorway was really cold though.
-Mr. Bow: Ah yes very fascinating, wait, what is happening to your mother’s soup over there!
+Mr. Bow: Ah yes very fascinating... Wait, what is happening to your mother’s soup over there?
 <<dialogueend Player>>
 ===
 
@@ -92,7 +93,7 @@ Sarah sees her mom leaving out the front door
 Sarah: Where are you going? We have dinner soon, right?
 Sarah’s mom: I have a work thing, sorry i’ll be gone for just like 10 minutes, just 10!
 Sarah: I’m hungry right now though!
-Sarah’s mom: There's food in the uh fridge… place… yeah i’ll be right back!
+Sarah’s mom: There's food in the uh fridge… place… yeah I’ll be right back!
 <<dialogueend Player>>
 ===
 
@@ -117,7 +118,7 @@ Sarah: I think I can go behind the fireplace.
 
 title: LivRmHide
 ---
-Sarah: ... I have to go
+Sarah: ... I have to go.
 Mr. Bow: But that thing is out there!
 Sarah: Hiding doesn't get me anywhere.
 Mr. Bow: Sarah!
@@ -151,7 +152,7 @@ Sarah:... Waffles are cooler though.
 
 title: momnote
 ---
-Mom: Hey sarah,do you mind making sure the soup is ready by the time i get home? Make sure it does not not get ruined no matter what! Love mom.
+Mom: Hey Sarah, do you mind making sure the soup is ready by the time I get home? Make sure it does not not get ruined no matter what! Love, Mom.
 <<dialogueend Player>>
 ===
 
@@ -223,8 +224,8 @@ Sarah: That's not… I’m not…
 
 title:  hallwaylockedbedroom
 ---
-locked
-Sarah: Noooo it won't open
+Locked
+Sarah: Noooo, it won't open!
 Mr. Bow: I'm sure the key will be somewhere around the house, we just have to find it!
 Sarah: Okay...
 Mr. Bow: lets check the bathroom while we are up here.
@@ -236,8 +237,8 @@ title: BathroomMemory
 Sarah’s mom: What do you think?
 Sarah: I look the same.
 Sarah’s mom: Your eyelids are blue! What color are they normally!
-Sarah: I like blue, I think
-Sarah’s mom: Well I think blue suits you well, now just go down stairs and we can start your birthday shopping!
+Sarah: I like blue, I think.
+Sarah’s mom: Blue is the color of the ocean
 Sarah: Can we get blue pretzels?
 <<nextscene NPC>>
 <<dialogueend Player>>
@@ -254,7 +255,6 @@ You melted down the sink!
 title: MasterBedroomNote
 ---
 Mom: Sarah, this is not a room you want to live with.
-Mom: You know what you have to do.
 Mom: This is not a dark place
 <<activate_object ActivateManager>>
 Mom?: You're just a dark person.

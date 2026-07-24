@@ -35,10 +35,13 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] DialogueRunner dialogue;
 
+    private Animator animator;
+
     private void Start()
     {
         shootScript = GetComponent<TopDownShootProjectile>();
         moveScript = GetComponent<Move>();
+        animator = GetComponent<Animator>();
         if (AcrossScenes.instance != null)
         {
             if (AcrossScenes.instance.hasStuffy) { StuffyPickUp(); }
@@ -170,6 +173,7 @@ public class Inventory : MonoBehaviour
             {
                 AcrossScenes.instance.hasStuffy = true;
             }
+        animator.SetBool("HasBow", true);
             if (itemScript!= null)
         {
             itemScript.Disappear();
@@ -180,6 +184,7 @@ public class Inventory : MonoBehaviour
        stuffy = false;
        stuffyImage.SetActive(false);
        healthSystem.stuffy = false;
+        animator.SetBool("HasBow", false);
         if (AcrossScenes.instance != null)
         {
             AcrossScenes.instance.hasStuffy = false;

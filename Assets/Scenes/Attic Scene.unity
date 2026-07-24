@@ -573,6 +573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7540076349208253336, guid: 23a82822648051c4c95bcb441daf0f5d, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1057159060}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4655,6 +4659,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 259951893630066332, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: autoStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259951893630066332, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: startNode
+      value: StartAttic
+      objectReference: {fileID: 0}
     - target: {fileID: 1029911299037075397, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       propertyPath: m_Name
       value: UserInterface
@@ -4835,6 +4847,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: PauseScreen
+      value: 
+      objectReference: {fileID: 1057159060}
+    - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: healthSystem
+      value: 
+      objectReference: {fileID: 1648982505}
     - target: {fileID: 6468541479657390457, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4899,6 +4919,11 @@ PrefabInstance:
 --- !u!1 &1057159059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441493184239425249, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 1057159058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1057159060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8926433730417534360, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
   m_PrefabInstance: {fileID: 1057159058}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1057159061 stripped
@@ -5696,7 +5721,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -6239,6 +6264,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1821414301}
   m_SourcePrefab: {fileID: 100100000, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+--- !u!114 &1648982505 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7298909660762482563, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+  m_PrefabInstance: {fileID: 1648982504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821414291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb970c45b40bb4652a8310660a03dfb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
 --- !u!1 &1717660401
 GameObject:
   m_ObjectHideFlags: 0
