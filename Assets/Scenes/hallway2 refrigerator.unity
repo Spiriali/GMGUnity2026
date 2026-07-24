@@ -18639,6 +18639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230389142}
   - component: {fileID: 1230389141}
+  - component: {fileID: 1230389144}
   m_Layer: 0
   m_Name: doorframe
   m_TagString: Untagged
@@ -18721,6 +18722,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1230389144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230389140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb2d0a9b65a78345a55c55bd9d9e388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  dialogueNode: Doorlocked
+  levelLoad: 
 --- !u!1 &1278453963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2151405527272611558, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}

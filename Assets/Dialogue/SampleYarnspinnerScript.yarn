@@ -260,3 +260,9 @@ Mom: This is not a dark place
 Mom?: You're just a dark person.
 <<dialogueend Player>>
 ===
+
+title: Doorlocked
+---
+Sarah: It's Locked!
+<<dialogueend Player>>
+===
