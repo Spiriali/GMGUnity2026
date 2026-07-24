@@ -3786,6 +3786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7540076349208253336, guid: 23a82822648051c4c95bcb441daf0f5d, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 2013563307}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11520,6 +11524,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: PauseScreen
+      value: 
+      objectReference: {fileID: 2013563307}
+    - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: healthSystem
+      value: 
+      objectReference: {fileID: 2128983468}
     - target: {fileID: 6468541479657390457, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11584,6 +11596,11 @@ PrefabInstance:
 --- !u!1 &2013563306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5385142671721557477, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 2013563305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2013563307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8926433730417534360, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
   m_PrefabInstance: {fileID: 2013563305}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2128983467
@@ -11691,6 +11708,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+--- !u!114 &2128983468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7298909660762482563, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+  m_PrefabInstance: {fileID: 2128983467}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb970c45b40bb4652a8310660a03dfb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1213,6 +1213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7540076349208253336, guid: 23a82822648051c4c95bcb441daf0f5d, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 2086570777}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10555,6 +10559,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+      propertyPath: PauseScreen
+      value: 
+      objectReference: {fileID: 2086570777}
+    - target: {fileID: 6425927308392965028, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
       propertyPath: healthSystem
       value: 
       objectReference: {fileID: 1686560114}
@@ -10622,6 +10630,11 @@ PrefabInstance:
 --- !u!1 &2086570776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441493184239425249, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
+  m_PrefabInstance: {fileID: 2086570775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2086570777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8926433730417534360, guid: 95c4e756783e9884483b85739f9bb3bc, type: 3}
   m_PrefabInstance: {fileID: 2086570775}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
