@@ -17706,6 +17706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 895561503688138129, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 7694499172919881663}
     - target: {fileID: 5784635856690441876, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
       propertyPath: m_Name
       value: Player
@@ -17813,6 +17817,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb970c45b40bb4652a8310660a03dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
+--- !u!82 &7694499172919881663 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4881914564801075269, guid: 6259d6be30fca6048bddddd4c18bd619, type: 3}
+  m_PrefabInstance: {fileID: 7694499172919881652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8467982347025831297
 PrefabInstance:
   m_ObjectHideFlags: 0
