@@ -1066,6 +1066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jerry Activator
       objectReference: {fileID: 0}
+    - target: {fileID: 8457893162984837602, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9191085345020715496, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1090,11 +1094,11 @@ PrefabInstance:
       addedObject: {fileID: 1366328503}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1392857019}
+      insertIndex: -1
+      addedObject: {fileID: 1392857029}
     - targetCorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
-      insertIndex: 7
-      addedObject: {fileID: 1392857020}
+      insertIndex: -1
+      addedObject: {fileID: 1392857028}
   m_SourcePrefab: {fileID: 100100000, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
 --- !u!1001 &337536566
 PrefabInstance:
@@ -9472,7 +9476,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3586349716919093090, guid: 1f342332f3d748a4ea66b2c6445b2591, type: 3}
   m_PrefabInstance: {fileID: 294999661}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1392857019
+--- !u!114 &1392857028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9485,7 +9489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
   levelName: Ending1
---- !u!114 &1392857020
+--- !u!114 &1392857029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9498,7 +9502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
   actions:
-  - {fileID: 260315837}
+  - {fileID: 1392857028}
   useCustomActions: 0
   customActions:
     m_PersistentCalls:
