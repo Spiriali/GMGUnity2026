@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModifyHealthAttribute
   destroyWhenActivated: 0
-  healthChange: -1
+  healthChange: -3
 --- !u!61 &715611163278997876
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -138,23 +138,23 @@ PrefabInstance:
       objectReference: {fileID: -2510476293373519475, guid: 4bb427a23b6093f4fa893bf365592f0b, type: 3}
     - target: {fileID: 5007219211843110455, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7099650466400680085, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.36006883
+      value: 0.47367054
       objectReference: {fileID: 0}
     - target: {fileID: 7099650466400680085, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40755042
+      value: 0.458535
       objectReference: {fileID: 0}
     - target: {fileID: 7099650466400680085, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.44
+      value: 5.5116
       objectReference: {fileID: 0}
     - target: {fileID: 7099650466400680085, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.64
+      value: -1.6125
       objectReference: {fileID: 0}
     - target: {fileID: 7099650466400680085, guid: a4285171d8029d445a7caff454727387, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2421,7 +2421,6 @@ GameObject:
   m_Component:
   - component: {fileID: 846117036}
   - component: {fileID: 846117035}
-  - component: {fileID: 846117038}
   m_Layer: 0
   m_Name: Misc Laundry Mess
   m_TagString: Dialogue
@@ -2476,7 +2475,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3476192708383499638, guid: 051c595a2d1764244a0d39f7401c346c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2504,52 +2503,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1545490199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.566}
---- !u!61 &846117038
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846117034}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.00208842, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.3}
-    newSize: {x: 0.31, y: 0.3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.30582315, y: 0.3}
-  m_EdgeRadius: 0
 --- !u!1 &910807731
 GameObject:
   m_ObjectHideFlags: 0
